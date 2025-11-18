@@ -542,6 +542,301 @@
             z-index: -2;
         }
         
+        /* NEW: Floating Buttons */
+        .floating-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .floating-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .floating-btn:hover {
+            transform: translateY(-5px) scale(1.1);
+        }
+        
+        .whatsapp-btn {
+            background-color: #25D366;
+        }
+        
+        .ai-btn {
+            background: linear-gradient(135deg, #0B3D91, #FF8A00);
+        }
+        
+        .floating-btn-label {
+            position: absolute;
+            right: 70px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(10, 10, 26, 0.9);
+            padding: 8px 15px;
+            border-radius: 30px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+        
+        .floating-btn:hover .floating-btn-label {
+            opacity: 1;
+        }
+        
+        /* NEW: Testimonials Carousel */
+        .testimonial-carousel {
+            position: relative;
+            padding: 20px 0;
+        }
+        
+        .testimonial-item {
+            padding: 30px;
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+            margin: 0 15px;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .testimonial-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(255, 138, 0, 0.2);
+        }
+        
+        .testimonial-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border: 3px solid var(--orange);
+        }
+        
+        .testimonial-content {
+            position: relative;
+        }
+        
+        .testimonial-quote {
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .testimonial-quote:before, .testimonial-quote:after {
+            content: '"';
+            font-size: 30px;
+            color: var(--orange);
+            position: absolute;
+        }
+        
+        .testimonial-quote:before {
+            top: -10px;
+            left: -15px;
+        }
+        
+        .testimonial-quote:after {
+            bottom: -20px;
+            right: -15px;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .testimonial-position {
+            color: rgba(255,255,255,0.7);
+            font-size: 14px;
+        }
+        
+        .carousel-control-prev, .carousel-control-next {
+            width: 50px;
+            height: 50px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.7;
+        }
+        
+        .carousel-control-prev:hover, .carousel-control-next:hover {
+            opacity: 1;
+            background: var(--orange);
+        }
+        
+        .carousel-control-prev {
+            left: -25px;
+        }
+        
+        .carousel-control-next {
+            right: -25px;
+        }
+        
+        /* NEW: Our Process Section */
+        .process-section {
+            padding: 100px 0;
+            position: relative;
+        }
+        
+        .process-step {
+            text-align: center;
+            padding: 30px 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .process-step:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+            z-index: -1;
+            transition: all 0.3s ease;
+        }
+        
+        .process-step:hover:before {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(255, 138, 0, 0.2);
+        }
+        
+        .process-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, var(--navy), var(--orange));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            color: white;
+        }
+        
+        .process-connector {
+            position: absolute;
+            top: 40px;
+            right: -50%;
+            width: 100%;
+            height: 2px;
+            background: var(--orange);
+            z-index: -1;
+        }
+        
+        .process-step:last-child .process-connector {
+            display: none;
+        }
+        
+        /* NEW: Trusted By Section */
+        .client-logos {
+            padding: 50px 0;
+            background: rgba(255,255,255,0.02);
+        }
+        
+        .client-logo {
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+            max-height: 80px;
+            width: auto;
+        }
+        
+        .client-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        
+        /* NEW: Certifications Section */
+        .certifications-section {
+            padding: 80px 0;
+        }
+        
+        .certification-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .certification-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(255, 138, 0, 0.2);
+        }
+        
+        .certification-icon {
+            font-size: 3rem;
+            color: var(--orange);
+            margin-bottom: 20px;
+        }
+        
+        /* NEW: AI Assistant Modal */
+        .ai-modal .modal-content {
+            background: rgba(10, 10, 26, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: white;
+        }
+        
+        .ai-modal .modal-header {
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .ai-modal .modal-footer {
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .ai-chat-container {
+            height: 300px;
+            overflow-y: auto;
+            padding: 15px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .ai-message {
+            margin-bottom: 15px;
+            padding: 10px 15px;
+            border-radius: 10px;
+            max-width: 80%;
+        }
+        
+        .ai-user {
+            background: rgba(11, 61, 145, 0.5);
+            margin-left: auto;
+        }
+        
+        .ai-bot {
+            background: rgba(255, 138, 0, 0.2);
+        }
+        
         /* Responsive */
         @media screen and (max-width: 768px) {
             .timeline::after {
@@ -566,6 +861,43 @@
                 width: 200px;
                 height: 200px;
             }
+            
+            .floating-buttons {
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .floating-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+            
+            .carousel-control-prev, .carousel-control-next {
+                display: none;
+            }
+            
+            .process-connector {
+                display: none;
+            }
+            
+            .process-step {
+                margin-bottom: 30px;
+            }
+        }
+        
+        @media screen and (max-width: 576px) {
+            .services-section .card-3d {
+                margin-bottom: 20px;
+            }
+            
+            .testimonial-item {
+                padding: 20px;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
@@ -584,6 +916,18 @@
     
     <!-- 3D Scene Container -->
     <div id="three-container"></div>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/256759970315" target="_blank" class="floating-btn whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+            <span class="floating-btn-label">Chat on WhatsApp</span>
+        </a>
+        <button type="button" class="floating-btn ai-btn" data-bs-toggle="modal" data-bs-target="#aiAssistantModal">
+            <i class="fas fa-robot"></i>
+            <span class="floating-btn-label">AI Assistant</span>
+        </button>
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -607,6 +951,12 @@
                         <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#process">Process</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item">
@@ -619,11 +969,6 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
-        <!-- Optional Video Background -->
-        <!-- <video autoplay muted loop class="video-bg">
-            <source src="path-to-your-video.mp4" type="video/mp4">
-        </video> -->
-        
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-8" data-aos="fade-right">
@@ -725,7 +1070,7 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-5">
+    <section id="services" class="py-5 services-section">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
@@ -832,6 +1177,223 @@
         </div>
     </section>
 
+    <!-- Our Process Section -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Our Process</h2>
+                    <p class="lead mt-3">A structured approach to delivering exceptional results</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 process-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h4>Discovery</h4>
+                    <p>We begin by understanding your business, goals, and target audience to create a tailored strategy.</p>
+                    <div class="process-connector"></div>
+                </div>
+                <div class="col-md-6 col-lg-3 process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h4>Design</h4>
+                    <p>Creating visually appealing and user-friendly designs that align with your brand identity.</p>
+                    <div class="process-connector"></div>
+                </div>
+                <div class="col-md-6 col-lg-3 process-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="process-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4>Development</h4>
+                    <p>Building robust, scalable solutions using the latest technologies and best practices.</p>
+                    <div class="process-connector"></div>
+                </div>
+                <div class="col-md-6 col-lg-3 process-step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="process-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h4>Deployment</h4>
+                    <p>Launching your project and providing ongoing support to ensure optimal performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="client-logos">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h3 class="section-title">Trusted By</h3>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                    <img src="https://via.placeholder.com/150x80/0B3D91/FFFFFF?text=Sigmac+Motors" alt="Sigmac Motors" class="img-fluid client-logo">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                    <img src="https://via.placeholder.com/150x80/FF8A00/FFFFFF?text=Ugahits" alt="Ugahits" class="img-fluid client-logo">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                    <img src="https://via.placeholder.com/150x80/0a0a1a/FFFFFF?text=Buvuma+District" alt="Buvuma District" class="img-fluid client-logo">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                    <img src="https://via.placeholder.com/150x80/0B3D91/FFFFFF?text=Cyber+Computer" alt="Cyber Computer" class="img-fluid client-logo">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                    <img src="https://via.placeholder.com/150x80/FF8A00/FFFFFF?text=St.+Peter%27s+Uni" alt="St. Peter's University" class="img-fluid client-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Certifications</h2>
+                    <p class="lead mt-3">Professional credentials that validate my expertise</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="certification-item">
+                        <div class="certification-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Web Development</h4>
+                        <p>Certified in modern web development technologies including HTML5, CSS3, JavaScript, and responsive design principles.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="certification-item">
+                        <div class="certification-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4>Mobile App Development</h4>
+                        <p>Certified in Flutter and Dart for cross-platform mobile application development with expertise in UI/UX design.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="certification-item">
+                        <div class="certification-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>IT Support & Repair</h4>
+                        <p>Certified in computer hardware, software troubleshooting, and mobile device repair with extensive hands-on experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Testimonials</h2>
+                    <p class="lead mt-3">What clients and colleagues say about working with me</p>
+                </div>
+            </div>
+
+            <div class="testimonial-carousel">
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="testimonial-item">
+                                        <img src="https://via.placeholder.com/80x80/0B3D91/FFFFFF?text=SS" alt="Mr. Solo Saidi" class="testimonial-img">
+                                        <div class="testimonial-content">
+                                            <p class="testimonial-quote">"Wadda consistently delivered accurate, timely support for our digital records and computer systems. His attention to data integrity and backup processes improved our department's reliability."</p>
+                                            <h5 class="testimonial-author">Mr. Solo Saidi</h5>
+                                            <p class="testimonial-position">Buvuma District Local Government — IT Officer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="testimonial-item">
+                                        <img src="https://via.placeholder.com/80x80/FF8A00/FFFFFF?text=NR" alt="Mr. Nyonda Robert" class="testimonial-img">
+                                        <div class="testimonial-content">
+                                            <p class="testimonial-quote">"Reliable, professional and technically skilled. Wadda helped maintain our IT systems and assisted with administrative IT solutions that improved our operations."</p>
+                                            <h5 class="testimonial-author">Mr. Nyonda Robert</h5>
+                                            <p class="testimonial-position">Manager — Sigmac Motors Uganda Limited</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="testimonial-item">
+                                        <img src="https://via.placeholder.com/80x80/0a0a1a/FFFFFF?text=AM" alt="Mrs. Asiimire Marion" class="testimonial-img">
+                                        <div class="testimonial-content">
+                                            <p class="testimonial-quote">"Wadda's analytical approach to data and his clear communication helped our team access cleaner, well-organized datasets for planning and reporting."</p>
+                                            <h5 class="testimonial-author">Mrs. Asiimire Marion</h5>
+                                            <p class="testimonial-position">Biostatistician — Buvuma District</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="testimonial-item">
+                                        <img src="https://via.placeholder.com/80x80/0B3D91/FFFFFF?text=CC" alt="Cyber Computer Solution Clients" class="testimonial-img">
+                                        <div class="testimonial-content">
+                                            <p class="testimonial-quote">"Wadda is our go-to technician for phone and computer repairs — professional diagnostics and fast turnaround. Clients appreciate his honesty and technical guidance."</p>
+                                            <h5 class="testimonial-author">Cyber Computer Solution Clients</h5>
+                                            <p class="testimonial-position">Mukono — Phone & Computer Repair</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="testimonial-item">
+                                        <img src="https://via.placeholder.com/80x80/FF8A00/FFFFFF?text=UM" alt="Ugahits Media" class="testimonial-img">
+                                        <div class="testimonial-content">
+                                            <p class="testimonial-quote">"Wadda supported our platform with dependable development work and managed content delivery that boosted audience engagement for our music site."</p>
+                                            <h5 class="testimonial-author">Ugahits Media</h5>
+                                            <p class="testimonial-position">Developer & IT Specialist — Remote/Kampala</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="small">References available on request. Contact: Mr. Solo Saidi (0704692626 / 0789185114), Mr. Nyonda Robert (0702874572 / 0772874572), Mrs. Asiimire Marion (0777934507 / 0704907001).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Experience Section -->
     <section id="experience" class="py-5">
         <div class="container">
@@ -885,24 +1447,24 @@
                 <div class="col-lg-8 mb-4" data-aos="fade-right">
                     <div class="contact-form">
                         <h4 class="mb-4">Send Me a Message</h4>
-                        <form id="contactForm">
+                        <form id="contactForm" action="https://formspree.io/f/xjvnldbq" method="POST">
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label for="name" class="form-label">Your Name</label>
-                                    <input type="text" class="form-control" id="name" required>
+                                    <input type="text" class="form-control" id="name" name="name" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label for="email" class="form-label">Your Email</label>
-                                    <input type="email" class="form-control" id="email" required>
+                                    <input type="email" class="form-control" id="email" name="email" required>
                                 </div>
                             </div>
                             <div class="mb-3">
                                 <label for="subject" class="form-label">Subject</label>
-                                <input type="text" class="form-control" id="subject" required>
+                                <input type="text" class="form-control" id="subject" name="subject" required>
                             </div>
                             <div class="mb-3">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                             </div>
                             <button type="submit" class="glow-btn">Send Message</button>
                         </form>
@@ -1051,6 +1613,32 @@
         </div>
     </div>
 
+    <!-- AI Assistant Modal -->
+    <div class="modal fade ai-modal" id="aiAssistantModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fas fa-robot me-2"></i> AI Assistant</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ai-chat-container" id="aiChatContainer">
+                        <div class="ai-message ai-bot">
+                            <p>Hello! I'm your AI assistant. How can I help you today?</p>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="aiMessageInput" placeholder="Type your question here...">
+                        <button class="btn btn-outline-orange" type="button" id="sendAiMessage"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <small class="text-muted">AI responses are simulated for demonstration purposes</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     
@@ -1150,45 +1738,51 @@
         const portfolioData = [
             {
                 id: 1,
-                title: "E-Commerce Website",
+                title: "Ugonlinemedia — Music & Radio Portal",
                 category: "websites",
-                image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-                description: "A fully responsive e-commerce platform with payment integration"
+                image: "https://www.google.com/s2/favicons?domain=ugandaonlinemedia.blogspot.com&sz=256",
+                description: "Music & entertainment portal with news, audio uploads, artist features and integrated online radio.",
+                liveUrl: "https://ugandaonlinemedia.blogspot.com/"
             },
             {
                 id: 2,
-                title: "Fitness Mobile App",
-                category: "mobile",
-                image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-                description: "Cross-platform fitness tracking application built with Flutter"
+                title: "UgModed — Modded Android Apps Hub",
+                category: "websites",
+                image: "https://www.google.com/s2/favicons?domain=ugapps256.blogspot.com&sz=256",
+                description: "Curated collection of modded Android apps, APK downloads and installation guides for users.",
+                liveUrl: "https://ugapps256.blogspot.com/"
             },
             {
                 id: 3,
-                title: "Business Branding",
-                category: "graphics",
-                image: "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-                description: "Complete branding package including logo and marketing materials"
+                title: "Android Tips & Tricks — Tech Guides",
+                category: "websites",
+                image: "https://www.google.com/s2/favicons?domain=techinformer4.blogspot.com&sz=256",
+                description: "Practical Android how-to guides, troubleshooting tips and performance tweaks for everyday users.",
+                liveUrl: "https://techinformer4.blogspot.com/"
             },
             {
                 id: 4,
-                title: "Corporate Video",
-                category: "videos",
-                image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-                description: "Promotional video for a corporate client's product launch"
+                title: "Vas Nektar Music — Artist & Releases",
+                category: "websites",
+                image: "https://www.google.com/s2/favicons?domain=vasnektar256.blogspot.com&sz=256",
+                description: "Official music blog for Vas Nektar — song uploads, artist updates and promotional content.",
+                liveUrl: "https://vasnektar256.blogspot.com/"
             },
             {
                 id: 5,
-                title: "Portfolio Website",
+                title: "SPU Developers — Student Dev Group",
                 category: "websites",
-                image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-                description: "Custom portfolio website for a creative professional"
+                image: "https://www.google.com/s2/favicons?domain=tinacatina12.github.io&sz=256",
+                description: "Portfolio and resource site for St. Peter's University developers showcasing student projects and documentation.",
+                liveUrl: "https://tinacatina12.github.io/peters/"
             },
             {
                 id: 6,
-                title: "Food Delivery App",
-                category: "mobile",
-                image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-                description: "Food ordering and delivery application with real-time tracking"
+                title: "Ugonline Radio (Directory Listing)",
+                category: "websites",
+                image: "https://www.google.com/s2/favicons?domain=radio-uganda.com&sz=256",
+                description: "Radio directory listing linking to the live stream and station information for UgOnlineMedia.",
+                liveUrl: "https://radio-uganda.com/534-ugonlinemedia.html"
             }
         ];
         
@@ -1196,23 +1790,39 @@
         function loadPortfolioItems() {
             const portfolioGrid = document.getElementById('portfolio-grid');
             let portfolioHTML = '';
-            
+
             portfolioData.forEach(item => {
                 portfolioHTML += `
                     <div class="col-md-6 col-lg-4 portfolio-item" data-category="${item.category}">
                         <div class="position-relative overflow-hidden rounded">
                             <img src="${item.image}" class="portfolio-img" alt="${item.title}">
-                            <div class="portfolio-overlay">
+                            <div class="portfolio-overlay text-center p-4">
                                 <h5 class="text-white">${item.title}</h5>
-                                <p class="text-white">${item.description}</p>
-                                <a href="#" class="glow-btn mt-3">View Details</a>
+                                <p class="text-white small mb-3">${item.description}</p>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <a href="${item.liveUrl}" target="_blank" rel="noopener noreferrer" class="glow-btn">Visit Project</a>
+                                    <a href="#" class="glow-btn" data-project="${item.title}">Hire Me</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 `;
             });
-            
+
             portfolioGrid.innerHTML = portfolioHTML;
+
+            // Re-bind the "Hire Me" buttons to open the hire modal and pre-fill project details
+            document.querySelectorAll('.portfolio-overlay a[data-project]').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const hireModal = new bootstrap.Modal(document.getElementById('hireModal'));
+                    // Pre-fill project details into the hire modal
+                    const projectTitle = this.getAttribute('data-project');
+                    const detailsField = document.getElementById('projectDetails');
+                    if (detailsField) detailsField.value = `Interested in work related to: ${projectTitle}`;
+                    hireModal.show();
+                });
+            });
         }
         
         // Filter portfolio items
@@ -1242,22 +1852,35 @@
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // In a real implementation, you would send the form data to a server
-            // For this demo, we'll just show an alert
-            alert('Thank you for your message! I will get back to you soon.');
-            this.reset();
+            // Get form data
+            const formData = new FormData(this);
+            
+            // Send email using Formspree
+            fetch('https://formspree.io/f/xjvnldbq', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert('Thank you for your message! I will get back to you soon.');
+                    this.reset();
+                } else {
+                    alert('There was a problem sending your message. Please try again.');
+                }
+            })
+            .catch(error => {
+                alert('There was a problem sending your message. Please try again.');
+            });
         });
         
         // Hire form submission
         document.getElementById('hireForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            
-            // In a real implementation, you would send the form data to a server
-            // For this demo, we'll just show an alert and close the modal
             alert('Thank you for your inquiry! I will review your project details and get back to you soon.');
             this.reset();
-            
-            // Close the modal
             const modal = bootstrap.Modal.getInstance(document.getElementById('hireModal'));
             modal.hide();
         });
@@ -1270,6 +1893,99 @@
             } else {
                 navbar.classList.remove('scrolled');
             }
+        }
+        
+        // AI Assistant functionality
+        function initAIAssistant() {
+            const chatContainer = document.getElementById('aiChatContainer');
+            const messageInput = document.getElementById('aiMessageInput');
+            const sendButton = document.getElementById('sendAiMessage');
+            
+            // AI responses
+            const aiResponses = [
+                "I can help you with information about web development, mobile apps, IT consulting, and more.",
+                "For web development projects, I typically use HTML, CSS, JavaScript, and PHP.",
+                "Mobile app development is done using Flutter and Dart for cross-platform compatibility.",
+                "IT consulting services include system analysis, implementation, and ongoing support.",
+                "For graphic design, I use Adobe Creative Suite and Canva for professional designs.",
+                "Video editing services include promotional videos, tutorials, and social media content.",
+                "Computer and phone repair services are available for both hardware and software issues.",
+                "My typical project timeline is 2-4 weeks for websites and 4-8 weeks for mobile apps.",
+                "I offer ongoing maintenance and support packages for all completed projects.",
+                "You can contact me directly at 0759 970 315 or email contact@johnzempire.com"
+            ];
+            
+            // Function to add message to chat
+            function addMessage(message, isUser) {
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `ai-message ${isUser ? 'ai-user' : 'ai-bot'}`;
+                
+                const messageP = document.createElement('p');
+                messageP.textContent = message;
+                
+                messageDiv.appendChild(messageP);
+                chatContainer.appendChild(messageDiv);
+                
+                // Scroll to bottom
+                chatContainer.scrollTop = chatContainer.scrollHeight;
+            }
+            
+            // Function to get AI response
+            function getAIResponse(userMessage) {
+                // Simple keyword matching for demo purposes
+                userMessage = userMessage.toLowerCase();
+                
+                if (userMessage.includes('web') || userMessage.includes('website')) {
+                    return aiResponses[1];
+                } else if (userMessage.includes('mobile') || userMessage.includes('app')) {
+                    return aiResponses[2];
+                } else if (userMessage.includes('consult') || userMessage.includes('it')) {
+                    return aiResponses[3];
+                } else if (userMessage.includes('design') || userMessage.includes('graphic')) {
+                    return aiResponses[4];
+                } else if (userMessage.includes('video') || userMessage.includes('edit')) {
+                    return aiResponses[5];
+                } else if (userMessage.includes('repair') || userMessage.includes('computer') || userMessage.includes('phone')) {
+                    return aiResponses[6];
+                } else if (userMessage.includes('timeline') || userMessage.includes('time') || userMessage.includes('duration')) {
+                    return aiResponses[7];
+                } else if (userMessage.includes('support') || userMessage.includes('maintenance')) {
+                    return aiResponses[8];
+                } else if (userMessage.includes('contact') || userMessage.includes('email') || userMessage.includes('phone')) {
+                    return aiResponses[9];
+                } else {
+                    // Random response for other queries
+                    return aiResponses[Math.floor(Math.random() * aiResponses.length)];
+                }
+            }
+            
+            // Send message function
+            function sendMessage() {
+                const message = messageInput.value.trim();
+                
+                if (message) {
+                    // Add user message
+                    addMessage(message, true);
+                    
+                    // Clear input
+                    messageInput.value = '';
+                    
+                    // Simulate AI thinking
+                    setTimeout(() => {
+                        const aiResponse = getAIResponse(message);
+                        addMessage(aiResponse, false);
+                    }, 1000);
+                }
+            }
+            
+            // Event listeners
+            sendButton.addEventListener('click', sendMessage);
+            
+            messageInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
         }
         
         // Initialize everything when the page loads
@@ -1286,6 +2002,7 @@
             initThreeScene();
             loadPortfolioItems();
             animateSkillBars();
+            initAIAssistant();
             
             // Add event listeners to filter buttons
             const filterButtons = document.querySelectorAll('.portfolio-filter button');
@@ -1303,7 +2020,7 @@
                 });
             });
             
-            // Add event listener to "Hire Me" buttons
+            // Add event listener to "Hire Me" buttons in header and services
             const hireButtons = document.querySelectorAll('a[href="#contact"]');
             hireButtons.forEach(button => {
                 button.addEventListener('click', function(e) {
@@ -1317,10 +2034,8 @@
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     e.preventDefault();
-                    
                     const targetId = this.getAttribute('href');
                     if (targetId === '#') return;
-                    
                     const targetElement = document.querySelector(targetId);
                     if (targetElement) {
                         window.scrollTo({
