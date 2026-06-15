@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Johnz Empire – Web & App Projects</title>
+<meta name="description" content="Browse Johnz Empire's web and mobile app portfolio — websites, systems, apps and digital tools built for Ugandan businesses and beyond.">
+<link rel="canonical" href="https://johnzempire.com/portfolio.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230B3D91'/><text y='.9em' font-size='70' text-anchor='middle' x='50' fill='%23FF8A00' font-weight='bold'>J</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+:root{--navy:#0B3D91;--orange:#FF8A00;--og:rgba(255,138,0,.22);--ng:rgba(11,61,145,.35);--bg:#06080f;--bg2:#0a0d1c;--card:rgba(255,255,255,.04);--bdr:rgba(255,255,255,.08);--t:#fff;--ts:rgba(255,255,255,.78);--tm:rgba(255,255,255,.48);--nav:rgba(6,8,15,.82);--fh:'Syne',sans-serif;--fb:'DM Sans',sans-serif;--ease:cubic-bezier(.4,0,.2,1);--bounce:cubic-bezier(.34,1.56,.64,1)}
+[data-theme=light]{--bg:#f0f2f8;--bg2:#e6e9f2;--card:rgba(255,255,255,.85);--bdr:rgba(0,0,0,.09);--t:#0f1326;--ts:rgba(15,19,38,.80);--tm:rgba(15,19,38,.52);--nav:rgba(240,242,248,.88);--og:rgba(255,138,0,.15)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);color:var(--t);background:var(--bg);overflow-x:hidden;line-height:1.65;transition:background .3s,color .3s}
+h1,h2,h3,h4,h5,h6{font-family:var(--fh);font-weight:700}
+img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--navy),var(--orange));border-radius:3px}
+:focus-visible{outline:3px solid var(--orange)!important;outline-offset:2px!important}
+@media(prefers-reduced-motion:reduce){*,::before,::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+.tg{background:linear-gradient(135deg,var(--orange),#ffd080);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+/* BG */
+.abg{position:fixed;inset:0;z-index:-2;background:linear-gradient(-45deg,#06080f,#0B3D91,#0a0d1c,#161b35);background-size:400% 400%;animation:bgs 18s ease infinite}
+[data-theme=light] .abg{background:linear-gradient(-45deg,#e8ecf4,#c9d5ea,#eef0f5,#dce3ef);background-size:400% 400%}
+@keyframes bgs{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}
+
+/* COOKIE */
+#ck-bar{position:fixed;bottom:0;left:0;right:0;z-index:9998;background:rgba(10,13,28,.97);backdrop-filter:blur(20px);border-top:2px solid var(--orange);padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;transform:translateY(0);transition:transform .4s}
+#ck-bar.hide{transform:translateY(110%)}
+.ck-t{font-size:.82rem;color:var(--ts);max-width:600px}
+.ck-t a{color:var(--orange);text-decoration:underline}
+.ck-bs{display:flex;gap:.7rem;flex-shrink:0}
+.ckb{padding:.5rem 1.2rem;border-radius:25px;font-size:.78rem;font-weight:600;cursor:pointer;border:none;transition:all .25s}
+.cka{background:var(--orange);color:#fff}.cka:hover{background:#FFA533;transform:translateY(-2px)}
+.ckd{background:transparent;color:var(--ts);border:1.5px solid var(--bdr)}.ckd:hover{border-color:var(--orange);color:var(--orange)}
+
+/* NAVBAR */
+.navbar{background:var(--nav);backdrop-filter:blur(22px);border-bottom:1px solid var(--bdr);padding:.85rem 0;transition:all .3s}
+.navbar.sc{background:rgba(6,8,15,.97);padding:.55rem 0;border-bottom-color:rgba(255,138,0,.18)}
+[data-theme=light] .navbar.sc{background:rgba(240,242,248,.97)}
+.nb{font-family:var(--fh);font-size:1.5rem;font-weight:800;color:var(--t)!important;letter-spacing:-.02em}
+.nb .to{color:var(--orange)!important}
+.nl{font-size:.78rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ts)!important;padding:.4rem 1rem!important;position:relative;transition:color .25s}
+.nl::after{content:'';position:absolute;bottom:-1px;left:1rem;right:1rem;height:2px;background:var(--orange);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.nl:hover,.nl.active{color:var(--t)!important}
+.nl:hover::after,.nl.active::after{transform:scaleX(1)}
+.nav-cta{padding:.55rem 1.5rem;background:var(--orange);color:#fff!important;border-radius:50px;font-weight:600;font-size:.78rem;transition:all .25s}
+.nav-cta:hover{background:#FFA533;transform:translateY(-2px);box-shadow:0 8px 20px var(--og)}
+.tbtn{background:transparent;border:1.5px solid var(--bdr);color:var(--t);width:36px;height:36px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .25s;font-size:.9rem}
+.tbtn:hover{border-color:var(--orange);color:var(--orange);transform:rotate(20deg)}
+.navbar-toggler{border:1.5px solid var(--bdr);padding:.35rem .55rem;border-radius:8px}
+.navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.85%29' stroke-linecap='round' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")}
+[data-theme=light] .navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280,0,0,0.85%29' stroke-linecap='round' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")}
+
+/* HERO */
+.p-hero{min-height:52vh;display:flex;align-items:center;padding:8rem 0 4rem;position:relative;overflow:hidden}
+.p-hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,rgba(6,8,15,.98) 0%,rgba(11,61,145,.28) 50%,rgba(6,8,15,.95) 100%)}
+.p-mesh{position:absolute;inset:0;background-image:radial-gradient(rgba(255,138,0,.1) 1px,transparent 1px);background-size:28px 28px;pointer-events:none}
+.p-orb{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none}
+.po1{width:480px;height:480px;background:rgba(11,61,145,.22);top:-130px;right:-80px;animation:pof 9s ease-in-out infinite}
+.po2{width:320px;height:320px;background:rgba(255,138,0,.1);bottom:-60px;left:-40px;animation:pof 9s ease-in-out infinite 4s}
+@keyframes pof{0%,100%{transform:translateY(0)}50%{transform:translateY(-25px)}}
+.p-hi{position:relative;z-index:2}
+.p-tag{display:inline-flex;align-items:center;gap:.6rem;background:rgba(255,138,0,.12);border:1px solid rgba(255,138,0,.25);color:var(--orange);padding:.4rem 1rem;border-radius:30px;font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:1.5rem;animation:fu .7s var(--ease) .1s both}
+.p-ht{font-family:var(--fh);font-size:clamp(2.5rem,6vw,5rem);font-weight:800;line-height:1.05;letter-spacing:-.03em;color:#fff;animation:fu .7s var(--ease) .25s both}
+.p-hs{font-size:1rem;color:var(--tm);max-width:520px;line-height:1.8;margin-top:1.2rem;font-weight:300;animation:fu .7s var(--ease) .4s both}
+.p-hstats{display:flex;flex-wrap:wrap;gap:2rem;margin-top:2rem;animation:fu .7s var(--ease) .55s both}
+.p-stat strong{font-family:var(--fh);font-size:1.8rem;font-weight:800;color:var(--orange);display:block;line-height:1}
+.p-stat span{font-size:.72rem;color:var(--tm);text-transform:uppercase;letter-spacing:.1em}
+@keyframes fu{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+
+/* FILTER */
+.pf-wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;margin-bottom:2.5rem}
+.pf-b{padding:.55rem 1.3rem;border:1.5px solid var(--bdr);color:var(--ts);border-radius:30px;font-size:.78rem;font-weight:500;cursor:pointer;transition:all .25s;background:transparent}
+.pf-b.on,.pf-b:hover{border-color:var(--orange);color:var(--orange);background:rgba(255,138,0,.08)}
+
+/* PROJECT CARDS */
+.proj-card{background:var(--card);backdrop-filter:blur(18px);border:1px solid var(--bdr);border-radius:16px;overflow:hidden;height:100%;transition:all .35s var(--ease);display:flex;flex-direction:column}
+.proj-card:hover{transform:translateY(-8px);border-color:rgba(255,138,0,.3);box-shadow:0 20px 50px var(--og)}
+.proj-img-wrap{position:relative;overflow:hidden;height:190px;flex-shrink:0}
+.proj-img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+.proj-card:hover .proj-img{transform:scale(1.07)}
+.proj-img-placeholder{width:100%;height:100%;background:linear-gradient(135deg,var(--navy),var(--bg2));display:flex;align-items:center;justify-content:center;font-size:2.5rem;color:rgba(255,138,0,.3)}
+.proj-body{padding:1.4rem;display:flex;flex-direction:column;flex:1}
+.proj-title{font-family:var(--fh);font-size:1.05rem;font-weight:700;color:var(--t);margin-bottom:.5rem;line-height:1.3}
+.proj-desc{font-size:.83rem;color:var(--tm);line-height:1.7;margin-bottom:1rem;flex:1}
+.proj-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1rem}
+.proj-tag{font-size:.68rem;font-weight:600;padding:.2rem .6rem;border-radius:10px;background:rgba(11,61,145,.25);color:rgba(255,138,0,.9);border:1px solid rgba(255,138,0,.15);letter-spacing:.04em;text-transform:uppercase}
+.proj-meta{font-size:.72rem;color:var(--tm);margin-bottom:.9rem;display:flex;align-items:center;gap:.5rem}
+.proj-meta i{color:var(--orange);font-size:.65rem}
+.proj-links{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:auto}
+.p-link{display:inline-flex;align-items:center;gap:.4rem;padding:.48rem 1rem;border-radius:25px;font-size:.75rem;font-weight:600;cursor:pointer;transition:all .25s;text-decoration:none}
+.p-link-live{background:var(--orange);color:#fff;border:1px solid var(--orange)}
+.p-link-live:hover{background:#FFA533;color:#fff;transform:translateY(-2px);box-shadow:0 6px 16px var(--og)}
+.p-link-gh{background:transparent;color:var(--ts);border:1.5px solid var(--bdr)}
+.p-link-gh:hover{border-color:var(--orange);color:var(--orange)}
+.proj-new-badge{position:absolute;top:.7rem;right:.7rem;background:var(--orange);color:#fff;font-size:.62rem;font-weight:700;padding:.2rem .6rem;border-radius:10px;letter-spacing:.06em;text-transform:uppercase;z-index:2}
+
+/* SKELETON LOADING */
+.sk-card{background:var(--card);border:1px solid var(--bdr);border-radius:16px;overflow:hidden;height:320px;animation:skpulse 1.5s ease-in-out infinite}
+.sk-img{height:190px;background:rgba(255,255,255,.05)}
+.sk-body{padding:1.4rem}
+.sk-line{height:12px;background:rgba(255,255,255,.05);border-radius:6px;margin-bottom:.8rem}
+.sk-line.short{width:60%}
+.sk-line.xshort{width:35%}
+@keyframes skpulse{0%,100%{opacity:1}50%{opacity:.5}}
+
+/* GITHUB STATUS */
+.gh-status{display:flex;align-items:center;gap:.6rem;font-size:.78rem;padding:.5rem 1rem;border-radius:25px;margin-bottom:1.5rem}
+.gh-ok{background:rgba(34,197,94,.1);color:#4ade80;border:1px solid rgba(34,197,94,.2)}
+.gh-warn{background:rgba(255,138,0,.1);color:var(--orange);border:1px solid rgba(255,138,0,.2)}
+.gh-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.gh-ok .gh-dot{background:#4ade80;animation:ghp 2s ease-in-out infinite}
+.gh-warn .gh-dot{background:var(--orange)}
+@keyframes ghp{0%,100%{opacity:1}50%{opacity:.4}}
+
+/* CASE STUDY STRIP */
+.cs-strip{background:var(--bg2);padding:5rem 0;border-top:1px solid var(--bdr)}
+.cs-card{background:var(--card);backdrop-filter:blur(16px);border:1px solid var(--bdr);border-radius:16px;padding:1.8rem;height:100%;transition:all .3s var(--ease);position:relative;overflow:hidden}
+.cs-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--navy),var(--orange));transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.cs-card:hover{transform:translateY(-6px);box-shadow:0 18px 45px var(--og)}
+.cs-card:hover::before{transform:scaleX(1)}
+.cs-lbl{display:inline-flex;align-items:center;gap:.4rem;padding:.28rem .8rem;border-radius:20px;font-size:.7rem;font-weight:600;margin-bottom:.65rem}
+.cs-p{background:rgba(239,68,68,.12);color:#f87171;border:1px solid rgba(239,68,68,.2)}
+.cs-s{background:rgba(34,197,94,.12);color:#4ade80;border:1px solid rgba(34,197,94,.2)}
+.cs-o{background:rgba(255,138,0,.12);color:var(--orange);border:1px solid rgba(255,138,0,.2)}
+.cs-t{font-size:.84rem;color:var(--ts);line-height:1.75;margin-bottom:.55rem}
+
+/* CTA */
+.p-cta{padding:6rem 0;background:var(--bg2);text-align:center;position:relative;overflow:hidden}
+.p-cta::before{content:'';position:absolute;top:-40%;right:-10%;width:500px;height:500px;border-radius:50%;background:var(--og);filter:blur(150px);pointer-events:none}
+.p-cta-t{font-family:var(--fh);font-size:clamp(1.8rem,4vw,3rem);font-weight:800;color:var(--t);margin-bottom:1rem}
+.p-cta-s{font-size:.95rem;color:var(--ts);max-width:480px;margin:0 auto 2rem;font-weight:300;line-height:1.8}
+.btn-g{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 2rem;background:linear-gradient(135deg,var(--orange),#e67e00);color:#fff;border-radius:50px;font-weight:600;font-size:.85rem;border:none;cursor:pointer;transition:all .3s;text-decoration:none}
+.btn-g:hover{transform:translateY(-3px);box-shadow:0 12px 30px var(--og);color:#fff}
+.btn-go{display:inline-flex;align-items:center;gap:.5rem;padding:.82rem 2rem;border:1.5px solid var(--bdr);color:var(--ts);border-radius:50px;font-weight:500;font-size:.85rem;cursor:pointer;transition:all .25s;background:transparent;text-decoration:none;margin-left:.8rem}
+.btn-go:hover{border-color:var(--orange);color:var(--orange);background:var(--og)}
+
+/* FOOTER */
+footer{background:rgba(4,6,12,.97);padding:3rem 0 1.5rem;border-top:1px solid var(--bdr)}
+.fc{font-size:.78rem;color:rgba(255,255,255,.28)}
+.sic{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:8px;background:rgba(255,255,255,.06);border:1px solid var(--bdr);color:var(--ts);font-size:.95rem;margin:.15rem;transition:all .25s}
+.sic:hover{background:var(--orange);color:#fff;border-color:var(--orange);transform:translateY(-2px)}
+@media(max-width:767px){.p-hstats{gap:1.2rem}}
+</style>
+</head>
+<body>
+<div class="abg"></div>
+
+<!-- COOKIE -->
+<div id="ck-bar">
+  <div class="ck-t">We use cookies to enhance your experience. By continuing you agree to our <a href="#">Cookie Policy</a>.</div>
+  <div class="ck-bs">
+    <button class="ckb cka" onclick="setCK('ok')">Accept All</button>
+    <button class="ckb ckd" onclick="setCK('no')">Decline</button>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top" id="nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand nb" href="index.html">Johnz <span class="to">Empire</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nc" aria-controls="nc" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="nc">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nl" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nl" href="index.html#about">About</a></li>
+        <li class="nav-item"><a class="nl" href="index.html#services">Services</a></li>
+        <li class="nav-item"><a class="nl active" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nl" href="graphics.html">Graphics</a></li>
+        <li class="nav-item"><a class="nl" href="index.html#contact">Contact</a></li>
+        <li class="nav-item ms-lg-2"><a class="nav-cta" href="index.html#contact">Hire Me</a></li>
+        <li class="nav-item ms-2"><button class="tbtn" id="tbtn" aria-label="Toggle theme"><i class="fas fa-sun"></i></button></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="p-hero">
+  <div class="p-hero-bg"></div><div class="p-mesh"></div>
+  <div class="p-orb po1"></div><div class="p-orb po2"></div>
+  <div class="container p-hi">
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <div class="p-tag"><i class="fas fa-code me-1"></i>Web & App Portfolio</div>
+        <h1 class="p-ht">Projects That <span class="tg">Deliver</span><br>Real Results</h1>
+        <p class="p-hs">Websites, mobile apps, management systems, and digital tools — each built with purpose for Ugandan businesses and beyond. New projects automatically appear here as they go live.</p>
+        <div class="p-hstats">
+          <div class="p-stat"><strong>250+</strong><span>Projects Built</span></div>
+          <div class="p-stat"><strong>6+</strong><span>Live Repos</span></div>
+          <div class="p-stat"><strong>5+</strong><span>Years Active</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO GRID -->
+<section style="padding:5rem 0">
+  <div class="container">
+    <div class="text-center mb-4" data-aos="fade-up">
+      <div style="display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--orange);margin-bottom:.8rem"><span style="width:22px;height:2px;background:var(--orange);display:inline-block"></span>All Projects</div>
+      <h2 style="font-family:var(--fh);font-size:clamp(1.9rem,4vw,3rem);font-weight:800;color:var(--t)">Web & App <span class="tg">Projects</span></h2>
+      <p style="color:var(--ts);font-size:.95rem;max-width:540px;margin:.8rem auto 0;font-weight:300">Includes live GitHub repositories — new projects you push will automatically appear here</p>
+    </div>
+
+    <!-- GitHub status -->
+    <div class="d-flex justify-content-center mb-3">
+      <div class="gh-status gh-warn" id="gh-status" style="display:none!important"></div>
+    </div>
+
+    <!-- Filter -->
+    <div class="pf-wrap" data-aos="fade-up" data-aos-delay="100">
+      <button class="pf-b on" data-f="all">All Projects</button>
+      <button class="pf-b" data-f="website">Websites</button>
+      <button class="pf-b" data-f="app">Mobile Apps</button>
+      <button class="pf-b" data-f="system">Systems</button>
+      <button class="pf-b" data-f="blog">Blogs & Media</button>
+    </div>
+
+    <!-- Grid -->
+    <div class="row g-4" id="pgrid" data-aos="fade-up" data-aos-delay="150">
+      <!-- Skeleton placeholders while loading -->
+      <div class="col-md-6 col-lg-4 sk-wrap"><div class="sk-card"><div class="sk-img"></div><div class="sk-body"><div class="sk-line"></div><div class="sk-line short"></div><div class="sk-line xshort"></div></div></div></div>
+      <div class="col-md-6 col-lg-4 sk-wrap"><div class="sk-card"><div class="sk-img"></div><div class="sk-body"><div class="sk-line"></div><div class="sk-line short"></div><div class="sk-line xshort"></div></div></div></div>
+      <div class="col-md-6 col-lg-4 sk-wrap"><div class="sk-card"><div class="sk-img"></div><div class="sk-body"><div class="sk-line"></div><div class="sk-line short"></div><div class="sk-line xshort"></div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES STRIP -->
+<section class="cs-strip">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div style="display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--orange);margin-bottom:.8rem"><span style="width:22px;height:2px;background:var(--orange);display:inline-block"></span>Case Studies</div>
+      <h2 style="font-family:var(--fh);font-size:clamp(1.9rem,4vw,2.8rem);font-weight:800;color:var(--t)">Projects with <span class="tg">Measurable Impact</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4" data-aos="fade-up">
+        <div class="cs-card">
+          <span class="cs-lbl cs-p"><i class="fas fa-exclamation-circle me-1"></i>Problem</span>
+          <p class="cs-t">Ugonlinemedia needed a central portal for music, news, and live radio streaming for Ugandan audiences.</p>
+          <span class="cs-lbl cs-s"><i class="fas fa-lightbulb me-1"></i>Solution</span>
+          <p class="cs-t">Responsive portal with embedded online radio, audio uploads, and SEO-optimised content structure.</p>
+          <span class="cs-lbl cs-o"><i class="fas fa-chart-line me-1"></i>Outcome</span>
+          <p class="cs-t" style="margin-bottom:1.2rem">300% traffic growth in 6 months. Listed on radio-uganda.com directory.</p>
+          <a href="https://ugandaonlinemedia.blogspot.com/" target="_blank" rel="noopener noreferrer" class="p-link p-link-live"><i class="fas fa-external-link-alt"></i>Visit Site</a>
+        </div>
+      </div>
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="cs-card">
+          <span class="cs-lbl cs-p"><i class="fas fa-exclamation-circle me-1"></i>Problem</span>
+          <p class="cs-t">Sigmac Motors Uganda needed inventory management and a CRM to replace manual data processes.</p>
+          <span class="cs-lbl cs-s"><i class="fas fa-lightbulb me-1"></i>Solution</span>
+          <p class="cs-t">Custom web-based inventory and CRM with real-time dashboards, reporting and user roles.</p>
+          <span class="cs-lbl cs-o"><i class="fas fa-chart-line me-1"></i>Outcome</span>
+          <p class="cs-t" style="margin-bottom:1.2rem">70% reduction in manual data entry. Improved customer follow-up speed.</p>
+          <span class="p-link p-link-gh" style="cursor:default;opacity:.6">Internal System</span>
+        </div>
+      </div>
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="cs-card">
+          <span class="cs-lbl cs-p"><i class="fas fa-exclamation-circle me-1"></i>Problem</span>
+          <p class="cs-t">SPU Developers needed a portfolio site to showcase student projects across St. Peter's University.</p>
+          <span class="cs-lbl cs-s"><i class="fas fa-lightbulb me-1"></i>Solution</span>
+          <p class="cs-t">GitHub Pages site with project galleries, docs sections and student profile cards.</p>
+          <span class="cs-lbl cs-o"><i class="fas fa-chart-line me-1"></i>Outcome</span>
+          <p class="cs-t" style="margin-bottom:1.2rem">200+ students showcased their work. Increased group visibility university-wide.</p>
+          <a href="https://tinacatina12.github.io/peters/" target="_blank" rel="noopener noreferrer" class="p-link p-link-live"><i class="fas fa-external-link-alt"></i>Visit Site</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="p-cta">
+  <div class="container" style="position:relative;z-index:1">
+    <div data-aos="fade-up">
+      <div class="p-cta-t">Have a Project <span class="tg">in Mind?</span></div>
+      <div class="p-cta-s">Websites, mobile apps, management systems — from UGX 500,000. Let's turn your idea into reality with clean code and great design.</div>
+      <a href="index.html#contact" class="btn-g"><i class="fas fa-rocket me-1"></i>Start a Project</a>
+      <a href="https://wa.me/256759970315" target="_blank" rel="noopener noreferrer" class="btn-go"><i class="fab fa-whatsapp me-1"></i>WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+      <div>
+        <div style="font-family:var(--fh);font-size:1.4rem;font-weight:800;color:#fff;margin-bottom:.4rem">Johnz <span style="color:var(--orange)">Empire</span></div>
+        <p class="fc mb-0">Web Dev · Mobile Apps · IT Consulting · Kampala, Uganda</p>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <a href="https://github.com/tinacatina12" target="_blank" rel="noopener noreferrer" class="sic" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.youtube.com/@Johnzempire" target="_blank" rel="noopener noreferrer" class="sic" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@johnzempire" target="_blank" rel="noopener noreferrer" class="sic" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+    <hr style="border-color:rgba(255,255,255,.07);margin:1.5rem 0 1rem">
+    <div class="d-flex justify-content-between flex-wrap gap-2">
+      <p class="fc mb-0">&copy; <span id="yr"></span> Johnz Empire. All rights reserved.</p>
+      <div style="display:flex;gap:1rem">
+        <a href="index.html" style="font-size:.78rem;color:rgba(255,255,255,.4)" onmouseover="this.style.color='#FF8A00'" onmouseout="this.style.color='rgba(255,255,255,.4)'">Home</a>
+        <a href="graphics.html" style="font-size:.78rem;color:rgba(255,255,255,.4)" onmouseover="this.style.color='#FF8A00'" onmouseout="this.style.color='rgba(255,255,255,.4)'">Graphics</a>
+        <a href="index.html#contact" style="font-size:.78rem;color:rgba(255,255,255,.4)" onmouseover="this.style.color='#FF8A00'" onmouseout="this.style.color='rgba(255,255,255,.4)'">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+/* THEME */
+(function(){const s=localStorage.getItem('je_t')||'dark';document.documentElement.setAttribute('data-theme',s);const b=document.getElementById('tbtn');function u(){const t=document.documentElement.getAttribute('data-theme');b.innerHTML=t==='dark'?'<i class="fas fa-sun"></i>':'<i class="fas fa-moon"></i>';}if(b){u();b.addEventListener('click',()=>{const c=document.documentElement.getAttribute('data-theme'),n=c==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('je_t',n);u();});}})();
+/* COOKIE */
+function setCK(v){localStorage.setItem('je_ck',v);document.getElementById('ck-bar').classList.add('hide');}
+(function(){if(localStorage.getItem('je_ck'))document.getElementById('ck-bar').classList.add('hide');})();
+/* NAVBAR */
+(function(){const nav=document.getElementById('nav');function c(){nav&&nav.classList.toggle('sc',scrollY>55);}addEventListener('scroll',c,{passive:true});c();})();
+/* AOS */
+document.addEventListener('DOMContentLoaded',()=>{if(typeof AOS!=='undefined')AOS.init({duration:900,once:true,offset:80});});
+/* YEAR */
+(function(){const e=document.getElementById('yr');if(e)e.textContent=new Date().getFullYear();})();
+
+/* ─── PORTFOLIO DATA ─── */
+const images = {
+  ugonlinemedia:'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=500&q=75',
+  ugmoded:'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&q=75',
+  android:'https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=500&q=75',
+  vasnektar:'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&q=75',
+  spu:'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&q=75',
+  radio:'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=75',
+  web:'https://images.unsplash.com/photo-1547658719-da2b51169166?w=500&q=75',
+  mobile:'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&q=75',
+  default:'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&q=75'
+};
+
+/* Manual / fallback projects */
+const manualProjects = [
+  {id:'ugonlinemedia',title:'Ugonlinemedia – Music & Radio Portal',desc:'Entertainment portal with embedded online radio, audio uploads, artist features & SEO-optimised content. Grew to 300% more visitors in 6 months.',url:'https://ugandaonlinemedia.blogspot.com/',github:'',lang:'HTML',tags:['HTML','CSS','JavaScript'],type:'blog',img:images.ugonlinemedia,stars:0,updated:'2024'},
+  {id:'ugmoded',title:'UgModed – Modded Android Apps Hub',desc:'Curated collection of modded Android APKs with guides, installation tips and regular updates for Ugandan users.',url:'https://ugapps256.blogspot.com/',github:'',lang:'HTML',tags:['Blogger','SEO','Content'],type:'blog',img:images.ugmoded,stars:0,updated:'2024'},
+  {id:'android-tips',title:'Android Tips & Tricks Blog',desc:'Practical Android how-to guides, performance tweaks and troubleshooting articles for everyday smartphone users.',url:'https://techinformer4.blogspot.com/',github:'',lang:'HTML',tags:['Blogger','Tech Writing','SEO'],type:'blog',img:images.android,stars:0,updated:'2024'},
+  {id:'vasnektar',title:'Vas Nektar Music – Artist Blog',desc:'Official music site for Vas Nektar — song uploads, artist news and promotional content.',url:'https://vasnektar256.blogspot.com/',github:'',lang:'HTML',tags:['Blogger','Music','Design'],type:'website',img:images.vasnektar,stars:0,updated:'2024'},
+  {id:'spu-developers',title:'SPU Developers – Student Dev Group',desc:'Portfolio site for St. Peter\'s University developers. Showcases 200+ student projects, documentation and profiles.',url:'https://tinacatina12.github.io/peters/',github:'https://github.com/tinacatina12/peters',lang:'HTML',tags:['HTML','CSS','GitHub Pages'],type:'website',img:images.spu,stars:0,updated:'2024',isNew:true},
+  {id:'radio-directory',title:'Ugonline Radio – Directory Listing',desc:'Listed station page on radio-uganda.com directory linking listeners to the live stream.',url:'https://radio-uganda.com/534-ugonlinemedia.html',github:'',lang:'HTML',tags:['Radio','Media','SEO'],type:'website',img:images.radio,stars:0,updated:'2024'},
+  {id:'hotel-system',title:'Hotel Management System',desc:'Complete web-based system for managing bookings, rooms, guests, billing and staff schedules. Built for Ugandan hospitality businesses.',url:'#',github:'',lang:'PHP',tags:['PHP','MySQL','Bootstrap','JavaScript'],type:'system',img:images.web,stars:0,updated:'2025'},
+  {id:'blog-cms',title:'Blog CMS',desc:'User-friendly content management system with SEO tools, media library, analytics dashboard and multi-user support.',url:'#',github:'',lang:'PHP',tags:['PHP','MySQL','CMS','SEO'],type:'system',img:images.default,stars:0,updated:'2025'},
+  {id:'staff-eval',title:'Staff Evaluation System',desc:'KPI dashboards, peer review tools, automated appraisal reports and performance tracking for HR teams.',url:'#',github:'',lang:'JavaScript',tags:['JavaScript','PHP','MySQL','HR'],type:'system',img:images.web,stars:0,updated:'2025'}
+];
+
+let allProjects = [...manualProjects];
+let activeFilter = 'all';
+let githubLoaded = false;
+
+function getTypeClass(type){
+  const map = {website:'website',blog:'blog',system:'system',app:'app'};
+  return map[type] || 'website';
+}
+
+function pickImage(repo){
+  const n = repo.name.toLowerCase();
+  if(n.includes('music')||n.includes('audio')||n.includes('radio')) return images.ugonlinemedia;
+  if(n.includes('android')||n.includes('mobile')||n.includes('app')) return images.mobile;
+  if(n.includes('hotel')||n.includes('booking')) return images.web;
+  if(n.includes('spu')||n.includes('peter')||n.includes('student')) return images.spu;
+  return images.default;
+}
+
+function renderCards(projects){
+  const grid = document.getElementById('pgrid');
+  if(!projects.length){
+    grid.innerHTML = `<div class="col-12 text-center py-5"><i class="fas fa-folder-open" style="font-size:3rem;color:var(--tm);margin-bottom:1rem;display:block"></i><p style="color:var(--tm)">No projects in this category yet.</p></div>`;
+    return;
+  }
+  grid.innerHTML = projects.map((p,i) => `
+    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="${(i%3)*60}">
+      <div class="proj-card">
+        <div class="proj-img-wrap">
+          ${p.img ? `<img src="${p.img}" alt="${p.title}" class="proj-img" loading="${i<3?'eager':'lazy'}">` : `<div class="proj-img-placeholder"><i class="fas fa-code"></i></div>`}
+          ${p.isNew ? '<div class="proj-new-badge">New</div>' : ''}
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">${p.title}</h3>
+          <p class="proj-desc">${p.desc || 'A web project by Wadda John / Johnz Empire.'}</p>
+          <div class="proj-tags">${(p.tags||[p.lang||'HTML']).slice(0,4).map(t=>`<span class="proj-tag">${t}</span>`).join('')}</div>
+          <div class="proj-meta"><i class="fas fa-clock"></i><span>Updated: ${p.updated||'2024'}</span>${p.stars>0?`<i class="fas fa-star ms-2"></i><span>${p.stars}</span>`:''}</div>
+          <div class="proj-links">
+            ${p.url && p.url!=='#' ? `<a href="${p.url}" target="_blank" rel="noopener noreferrer" class="p-link p-link-live"><i class="fas fa-external-link-alt"></i>Live Demo</a>` : ''}
+            ${p.github ? `<a href="${p.github}" target="_blank" rel="noopener noreferrer" class="p-link p-link-gh"><i class="fab fa-github"></i>GitHub</a>` : ''}
+          </div>
+        </div>
+      </div>
+    </div>`).join('');
+  if(typeof AOS !== 'undefined') AOS.refresh();
+}
+
+function filterAndRender(){
+  const filtered = activeFilter==='all' ? allProjects : allProjects.filter(p => p.type === activeFilter);
+  renderCards(filtered);
+}
+
+/* GitHub API auto-fetch */
+async function loadGitHub(){
+  try{
+    const res = await fetch('https://api.github.com/users/tinacatina12/repos?sort=updated&per_page=50',{
+      headers:{'Accept':'application/vnd.github.v3+json'}
+    });
+    if(!res.ok) throw new Error('Rate limited');
+    const repos = await res.json();
+    if(!Array.isArray(repos)) throw new Error('Bad response');
+
+    const ghProjects = repos
+      .filter(r => !r.fork && r.name !== 'tinacatina12')
+      .map(r => ({
+        id: 'gh-'+r.id,
+        title: r.name.replace(/-/g,' ').replace(/_/g,' ').replace(/\b\w/g,c=>c.toUpperCase()),
+        desc: r.description || 'A web project by Wadda John on GitHub.',
+        url: r.homepage || r.html_url,
+        github: r.html_url,
+        lang: r.language || 'HTML',
+        tags: [r.language||'HTML', 'GitHub'].filter(Boolean),
+        type: 'website',
+        img: pickImage(r),
+        stars: r.stargazers_count||0,
+        updated: new Date(r.pushed_at).getFullYear().toString(),
+        isNew: (new Date() - new Date(r.pushed_at)) < 30*24*60*60*1000
+      }));
+
+    /* Merge: keep manual if same URL exists, add new GitHub ones */
+    const manualUrls = new Set(manualProjects.map(p=>p.url));
+    const newFromGH = ghProjects.filter(p => !manualUrls.has(p.url) && !manualUrls.has(p.github));
+    allProjects = [...manualProjects, ...newFromGH];
+    githubLoaded = true;
+
+    const st = document.getElementById('gh-status');
+    st.className = 'gh-status gh-ok';
+    st.innerHTML = '<div class="gh-dot"></div><span>GitHub connected — ' + ghProjects.length + ' repos loaded</span>';
+    st.style.display = 'flex';
+
+    filterAndRender();
+  } catch(err){
+    const st = document.getElementById('gh-status');
+    st.className = 'gh-status gh-warn';
+    st.innerHTML = '<div class="gh-dot"></div><span>Showing saved projects (GitHub API temporarily unavailable)</span>';
+    st.style.display = 'flex';
+    filterAndRender();
+  }
+}
+
+/* Filter buttons */
+document.querySelectorAll('.pf-b').forEach(btn => {
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('.pf-b').forEach(b=>b.classList.remove('on'));
+    this.classList.add('on');
+    activeFilter = this.dataset.f;
+    filterAndRender();
+  });
+});
+
+/* Init */
+document.addEventListener('DOMContentLoaded', () => {
+  filterAndRender(); /* Show manual projects immediately */
+  loadGitHub();      /* Then enhance with GitHub */
+});
+</script>
+</body>
+</html>
