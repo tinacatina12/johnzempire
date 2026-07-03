@@ -55,7 +55,7 @@ img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
 ::-webkit-scrollbar-track{background:var(--bg)}
 ::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--navy),var(--orange));border-radius:3px}
 :focus-visible{outline:3px solid var(--orange)!important;outline-offset:2px!important}
-@media(prefers-reduced-motion:reduce){*,::before,::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media(prefers-reduced-motion:reduce){*,::before,::after{animation-duration:.5s!important;transition-duration:.5s!important}}
 
 /* =========================================================
    UTILITIES
@@ -566,7 +566,7 @@ footer{background:rgba(4,6,12,.97);padding:5rem 0 2rem;border-top:1px solid var(
 .mq-card{width:250px;height:158px;border-radius:12px;overflow:hidden;flex-shrink:0;position:relative;cursor:pointer}
 .mq-card img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
 .mq-card:hover img{transform:scale(1.08)}
-.mq-ov{position:absolute;inset:0;background:rgba(6,8,15,.72);display:flex;align-items:flex-end;padding:.8rem 1rem;opacity:0;transition:opacity .3s}
+.mq-ov{position:absolute;inset:0;background:rgba(6,8,15,.72);display:flex;align-items:flex-end;padding:.8rem 1rem;opacity:0;transition:opacity .10s}
 .mq-card:hover .mq-ov{opacity:1}
 .mq-ov span{font-size:.75rem;color:#fff;font-weight:600}
 </style>
