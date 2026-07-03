@@ -1236,7 +1236,7 @@ footer{background:rgba(4,6,12,.97);padding:5rem 0 2rem;border-top:1px solid var(
       <div class="faq-item" data-aos="fade-up" data-aos-delay="50"><div class="faq-q"><span>How does your consulting process work?</span><i class="fas fa-chevron-down"></i></div><div class="faq-a"><p>We follow a 5-step process: (1) Consultation, (2) Planning, (3) Development, (4) Testing, and (5) Delivery with ongoing support and maintenance included.</p></div></div>
       <div class="faq-item" data-aos="fade-up" data-aos-delay="100"><div class="faq-q"><span>Do you provide training for individuals and organisations?</span><i class="fas fa-chevron-down"></i></div><div class="faq-a"><p>Yes! We train individuals, institutions, and corporate teams — covering ICT basics, web design, blogging, graphic design, online business mentorship, and more.</p></div></div>
       <div class="faq-item" data-aos="fade-up" data-aos-delay="150"><div class="faq-q"><span>What is your typical project timeline?</span><i class="fas fa-chevron-down"></i></div><div class="faq-a"><p>Simple websites take 2–3 weeks. Complex applications take 2–3 months. We provide detailed timelines in every proposal so you always know what to expect.</p></div></div>
-      <div class="faq-item" data-aos="fade-up" data-aos-delay="200"><div class="faq-q"><span>How can I get started with a project?</span><i class="fas fa-chevron-down"></i></div><div class="faq-a"><p>Use the contact form below, WhatsApp us at 0759 970 315, or email contact@johnzempire.com. We'll schedule a free consultation to discuss your needs and provide a custom proposal.</p></div></div>
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="200"><div class="faq-q"><span>How can I get started with a project?</span><i class="fas fa-chevron-down"></i></div><div class="faq-a"><p>Use the contact form below, WhatsApp us at 0759 970 315, or email waddajohn45@gmail.com. We'll schedule a free consultation to discuss your needs and provide a custom proposal.</p></div></div>
     </div>
   </div>
 </section>
@@ -1351,7 +1351,7 @@ footer{background:rgba(4,6,12,.97);padding:5rem 0 2rem;border-top:1px solid var(
 </div>
 
 <!-- Structured Data -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Wadda John","jobTitle":"Software Developer & IT Consultant","url":"https://johnzempire.com/","telephone":"+256759970315","email":"contact@johnzempire.com","address":{"@type":"PostalAddress","addressLocality":"Kampala","addressCountry":"UG"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Wadda John","jobTitle":"Software Developer & IT Consultant","url":"https://johnzempire.com/","telephone":"+256759970315","email":"waddajohn45@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Kampala","addressCountry":"UG"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Johnz Empire","url":"https://johnzempire.com/","telephone":"+256759970315","address":{"@type":"PostalAddress","streetAddress":"Kanyanya, Gayaza Road","addressLocality":"Kampala","addressCountry":"UG"}}</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
@@ -1454,7 +1454,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     const body2=form.querySelector('[name="message"]').value.trim();
     if(!name||!email||!sub||!body2){msg.className='f-msg err';msg.textContent='Please fill in all fields.';msg.style.display='block';return;}
     const mailBody=`Name: ${name}\nEmail: ${email}\n\nMessage:\n${body2}`;
-    const mailUrl=`mailto:contact@johnzempire.com?subject=${encodeURIComponent(sub)}&body=${encodeURIComponent(mailBody)}`;
+    const mailUrl=`mailto:https://formspree.io/f/mzdvwevp?subject=${encodeURIComponent(sub)}&body=${encodeURIComponent(mailBody)}`;
     window.open(mailUrl,'_blank');
     msg.className='f-msg ok';msg.textContent='Your email client has opened with the message ready — just click Send!';msg.style.display='block';
     btn.innerHTML='<i class="fas fa-check me-2"></i>Email Opened!';btn.style.background='#16a34a';
@@ -1481,7 +1481,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   let hist=[{role:'assistant',content:'Hello! I\'m your AI assistant for Johnz Empire. Ask me anything about services, pricing, or how we can help your business grow.'}];
   function addMsg(t,isUser){const d=document.createElement('div');d.className='ai-m '+(isUser?'ai-user':'ai-bot');const p=document.createElement('p');p.textContent=t;d.appendChild(p);chat.appendChild(d);chat.scrollTop=chat.scrollHeight;}
   function addTyping(){const d=document.createElement('div');d.className='ai-m ai-bot typing-dots';d.id='aiTyping';for(let i=0;i<3;i++){const s=document.createElement('span');d.appendChild(s);}chat.appendChild(d);chat.scrollTop=chat.scrollHeight;}
-  function fallback(m){const l=m.toLowerCase();if(l.includes('price')||l.includes('cost')||l.includes('how much'))return'ICT Training from UGX 50k/session, websites from UGX 500k, graphic design from UGX 30k. Contact us for a custom quote!';if(l.includes('service')||l.includes('offer'))return'We offer: ICT Training, Digital Marketing, Graphic Design, Blogging, IT Support, and Web & Mobile App Development.';if(l.includes('contact')||l.includes('phone')||l.includes('email'))return'Reach us at 0759 970 315 or contact@johnzempire.com. We\'re in Kanyanya, Gayaza Road, Kampala.';return'Great question! Share more details about your needs or reach us at 0759 970 315.';}
+  function fallback(m){const l=m.toLowerCase();if(l.includes('price')||l.includes('cost')||l.includes('how much'))return'ICT Training from UGX 50k/session, websites from UGX 500k, graphic design from UGX 30k. Contact us for a custom quote!';if(l.includes('service')||l.includes('offer'))return'We offer: ICT Training, Digital Marketing, Graphic Design, Blogging, IT Support, and Web & Mobile App Development.';if(l.includes('contact')||l.includes('phone')||l.includes('email'))return'Reach us at 0759 970 315 or waddajohn45@gmail.com. We\'re in Kanyanya, Gayaza Road, Kampala.';return'Great question! Share more details about your needs or reach us at 0759 970 315.';}
   async function getReply(m){hist.push({role:'user',content:m});if(KEY==='YOUR_ANTHROPIC_API_KEY_HERE')return fallback(m);
   try{const r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json','x-api-key':KEY,'anthropic-version':'2023-06-01'},body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:400,system:'You are a helpful AI assistant for Johnz Empire, a digital solutions company in Kampala, Uganda. Be concise and friendly.',messages:hist})});const d=await r.json();const rep=d.content[0].text;hist.push({role:'assistant',content:rep});return rep;}catch(e){return fallback(m);}}
   async function send(){const t=inp.value.trim();if(!t)return;addMsg(t,true);inp.value='';addTyping();const rep=await getReply(t);document.getElementById('aiTyping')?.remove();addMsg(rep,false);}
