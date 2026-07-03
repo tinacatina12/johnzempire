@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | Johnz Empire – Web Dev, Design, ICT Training Uganda</title>
+<meta name="description" content="Explore Johnz Empire's full range of digital services in Uganda — web development, graphic design, ICT training, digital marketing, and more.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230B3D91'/><text y='.9em' font-size='70' text-anchor='middle' x='50' fill='%23FF8A00' font-weight='bold'>J</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+.svc-card{background:var(--bg-card);backdrop-filter:blur(18px);border:1px solid var(--border);border-radius:16px;overflow:hidden;height:100%;transition:all .35s var(--ease);position:relative}
+.svc-card:hover{transform:translateY(-8px);border-color:rgba(255,138,0,.3);box-shadow:0 20px 50px var(--orange-glow)}
+.svc-img-wrap{overflow:hidden;position:relative}
+.svc-img-wrap::after{content:'';position:absolute;bottom:0;left:0;right:0;height:70px;background:linear-gradient(0deg,var(--bg) 0%,transparent 100%)}
+.svc-top-img{height:155px;object-fit:cover;width:100%;transition:transform .5s}
+.svc-card:hover .svc-top-img{transform:scale(1.06)}
+.svc-body{padding:1.5rem}
+.svc-num{font-size:.65rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:var(--orange);margin-bottom:.5rem;opacity:.7}
+.svc-icon{width:48px;height:48px;background:linear-gradient(135deg,rgba(11,61,145,.25),rgba(255,138,0,.15));border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:var(--orange);margin-bottom:1rem;border:1px solid rgba(255,138,0,.2);transition:transform .3s}
+.svc-card:hover .svc-icon{transform:scale(1.1) rotate(-5deg)}
+.svc-title{font-size:1.15rem;font-weight:700;color:var(--text);margin-bottom:.5rem}
+.ph{display:inline-block;background:rgba(255,138,0,.12);color:var(--orange);padding:.25rem .8rem;border-radius:20px;font-size:.75rem;font-weight:600;margin-bottom:.9rem;border:1px solid rgba(255,138,0,.2)}
+.svc-desc{font-size:.84rem;color:var(--text-muted);line-height:1.75;margin-bottom:1rem}
+.svc-list{list-style:none;padding:0;margin-bottom:1.2rem}
+.svc-list li{font-size:.82rem;color:var(--text-sub);padding:.33rem 0 .33rem 1.1rem;position:relative;border-bottom:1px solid var(--border)}
+.svc-list li:last-child{border:none}
+.svc-list li::before{content:'›';position:absolute;left:0;color:var(--orange);font-weight:700}
+.ps-step{text-align:center;padding:2.5rem 1.5rem;position:relative}
+.ps-step::before{content:'';position:absolute;inset:0;background:var(--bg-card);backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:16px;z-index:-1;transition:all .3s}
+.ps-step:hover::before{transform:translateY(-8px);border-color:rgba(255,138,0,.3);box-shadow:0 16px 40px var(--orange-glow)}
+.ps-num{font-family:var(--font-head);font-size:3rem;font-weight:800;color:rgba(255,138,0,.08);-webkit-text-stroke:1px rgba(255,138,0,.2);line-height:1;margin-bottom:.5rem}
+.ps-icon{width:72px;height:72px;margin:0 auto 1.2rem;background:linear-gradient(135deg,var(--navy),var(--orange));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.6rem;color:#fff;box-shadow:0 8px 25px var(--orange-glow);transition:transform .3s var(--bounce)}
+.ps-step:hover .ps-icon{transform:scale(1.15) rotate(-8deg)}
+.sys-card{background:var(--bg-card);backdrop-filter:blur(18px);border:1px solid var(--border);border-radius:16px;padding:2.2rem;text-align:center;height:100%;transition:all .35s;position:relative;overflow:hidden}
+.sys-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--navy),var(--orange));transform:scaleX(0);transition:transform .4s}
+.sys-card:hover{transform:translateY(-8px);box-shadow:0 20px 50px var(--orange-glow);border-color:rgba(255,138,0,.3)}
+.sys-card:hover::after{transform:scaleX(1)}
+.sys-icon{width:64px;height:64px;margin:0 auto 1.2rem;background:linear-gradient(135deg,rgba(11,61,145,.25),rgba(255,138,0,.2));border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;color:var(--orange);border:1px solid rgba(255,138,0,.2)}
+.prc{background:var(--bg-card);backdrop-filter:blur(18px);border:1px solid var(--border);border-radius:20px;padding:2.5rem 2rem;height:100%;transition:all .35s;text-align:center;position:relative}
+.prc:hover{transform:translateY(-10px);box-shadow:0 25px 60px var(--orange-glow)}
+.prc.pop{border:2px solid var(--orange);transform:scale(1.04);background:rgba(255,138,0,.04)}
+.prc.pop:hover{transform:scale(1.07) translateY(-8px)}
+.pop-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(90deg,var(--navy),var(--orange));color:#fff;padding:.4rem 1.4rem;border-radius:20px;font-weight:700;font-size:.75rem;white-space:nowrap;text-transform:uppercase}
+.p-amt{font-family:var(--font-head);font-size:2.5rem;font-weight:800;color:var(--orange);line-height:1;margin:.8rem 0 .3rem}
+.p-list{list-style:none;padding:0;margin-bottom:1.8rem;text-align:left}
+.p-list li{padding:.55rem 0;font-size:.84rem;color:var(--text-sub);padding-left:1.5rem;position:relative;border-bottom:1px solid var(--border)}
+.p-list li:last-child{border:none}
+.p-list li::before{content:'✓';position:absolute;left:0;color:var(--orange);font-weight:700}
+.fi2{width:100%;background:var(--input-bg);border:1px solid var(--input-bdr);color:var(--text);border-radius:10px;padding:.85rem 1.1rem;font-size:.9rem;font-family:var(--font-body);outline:none;transition:all .25s;margin-bottom:1.2rem}
+.fi2:focus{border-color:var(--orange);background:rgba(255,138,0,.05);box-shadow:0 0 0 3px rgba(255,138,0,.1)}
+.fi2::placeholder{color:var(--text-muted)}
+.faq-item{background:var(--bg-card);backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:12px;margin-bottom:12px;overflow:hidden;transition:border-color .3s}
+.faq-item.open{border-color:rgba(255,138,0,.3)}
+.faq-q{padding:1.4rem 1.6rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:.92rem;color:var(--text);gap:1rem;user-select:none}
+.faq-q i{color:var(--orange);transition:transform .3s}
+.faq-item.open .faq-q i{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:all .35s}
+.faq-item.open .faq-a{max-height:400px;border-top:1px solid var(--border)}
+.faq-a p{padding:1.2rem 1.6rem;font-size:.87rem;color:var(--text-sub);line-height:1.8}
+@media(max-width:767px){.prc.pop{transform:scale(1)}}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+<div class="anim-bg"></div>
+<canvas id="pcanvas" aria-hidden="true"></canvas>
+
+<div id="ck-bar">
+  <div class="ck-text">We use cookies to enhance your experience. By continuing you agree to our <a href="#">Cookie Policy</a>.</div>
+  <div class="ck-btns">
+    <button class="ck-btn ck-accept" onclick="setCookie('ok')">Accept All</button>
+    <button class="ck-btn ck-decline" onclick="setCookie('no')">Decline</button>
+  </div>
+</div>
+<div id="soc-pop" role="dialog" aria-modal="true" aria-label="Follow Johnz Empire">
+  <div class="sp-card">
+    <button class="sp-x" onclick="closePopup()" aria-label="Close"><i class="fas fa-times"></i></button>
+    <div class="sp-head">
+      <div class="sp-title">Stay Connected with Johnz Empire</div>
+      <div class="sp-sub">Follow us for tech tips, tutorials, and digital insights from Kampala.</div>
+    </div>
+    <div class="sp-btns">
+      <a href="https://youtube.com/@johnzempire?si=VfGgbA-yuhZGEhm-" target="_blank" rel="noopener noreferrer" class="sp-btn sp-yt" onclick="closePopup()">
+        <i class="fab fa-youtube"></i><div class="sp-bl"><span>Subscribe on YouTube</span><small>Join our growing community</small></div></a>
+      <a href="https://www.tiktok.com/@johnzempire" target="_blank" rel="noopener noreferrer" class="sp-btn sp-tt" onclick="closePopup()">
+        <i class="fab fa-tiktok"></i><div class="sp-bl"><span>Follow on TikTok</span><small>Tech tips &amp; behind the scenes</small></div></a>
+      <a href="https://wa.me/256759970315" target="_blank" rel="noopener noreferrer" class="sp-btn sp-wa" onclick="closePopup()">
+        <i class="fab fa-whatsapp"></i><div class="sp-bl"><span>Message on WhatsApp</span><small>0759 970 315 · Quick replies</small></div></a>
+    </div>
+  </div>
+</div>
+<div class="float-btns">
+  <a href="https://wa.me/256759970315" target="_blank" rel="noopener noreferrer" class="float-btn wa-float" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i><span class="float-lbl">Chat on WhatsApp</span></a>
+  <button class="float-btn ai-float" data-bs-toggle="modal" data-bs-target="#aiModal" aria-label="AI Assistant">
+    <i class="fas fa-robot"></i><span class="float-lbl">AI Assistant</span></button>
+</div>
+<button class="btt" id="bttBtn" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Johnz <span class="to">Empire</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+<li class="nav-item"><a class="nav-link" href="clients.html">Clients</a></li>
+<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+<li class="nav-item"><a class="nav-link" href="graphics.html">Graphics</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+        <li class="nav-item ms-lg-2"><a class="nav-cta" href="hire.html">Hire Me</a></li>
+        <li class="nav-item ms-2">
+          <button class="theme-btn" id="themeBtn" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main id="main">
+<section class="page-hero">
+  <div class="ph-bg"></div><div class="ph-mesh"></div>
+  <div class="ph-orb pho1"></div><div class="ph-orb pho2"></div>
+  <div class="container ph-inner">
+    <div class="ph-breadcrumb"><a href="index.html">Home</a><span>/</span><span>Services</span></div>
+    <div class="ph-tag"><i class="fas fa-briefcase me-1"></i>What We Offer</div>
+    <h1 class="ph-title">Services Built for <span class="text-grad">Real Impact</span></h1>
+    <p class="ph-sub">Comprehensive digital solutions — from training to full system development, all under one brand. Starting from UGX 20,000.</p>
+  </div>
+</section>
+
+<section style="padding:6rem 0">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-tag justify-content-center" style="display:flex">6 Core Services</div>
+      <h2 class="s-heading">Everything Your Business <span class="text-grad">Needs</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50"><div class="svc-card"><div class="svc-img-wrap"><img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80" alt="ICT Training" class="svc-top-img" loading="lazy"></div><div class="svc-body"><div class="svc-num">01</div><div class="svc-icon"><i class="fas fa-laptop-code"></i></div><h3 class="svc-title">ICT Training &amp; Consultancy</h3><div class="ph">From UGX 50,000 / session</div><p class="svc-desc">Practical skills for individuals, institutions &amp; corporate teams.</p><ul class="svc-list"><li>ICT basics &amp; computer literacy</li><li>Web design &amp; development</li><li>Blogging &amp; online income training</li><li>Graphics design training</li><li>ICT for schools and organizations</li></ul><div class="d-flex gap-2 flex-wrap"><a href="contact.html" class="btn-std">Get Quote</a><a href="hire.html" class="btn-std">Hire Me</a></div></div></div></div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100"><div class="svc-card"><div class="svc-img-wrap"><img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&q=80" alt="Digital Marketing" class="svc-top-img" loading="lazy"></div><div class="svc-body"><div class="svc-num">02</div><div class="svc-icon"><i class="fas fa-bullhorn"></i></div><h3 class="svc-title">Digital Marketing &amp; SEO</h3><div class="ph">From UGX 100,000 / month</div><p class="svc-desc">Grow your online visibility organically and strategically.</p><ul class="svc-list"><li>Social media management</li><li>YouTube &amp; blog content strategies</li><li>SEO optimization</li><li>Google &amp; Meta ad campaigns</li><li>Brand awareness campaigns</li></ul><div class="d-flex gap-2 flex-wrap"><a href="contact.html" class="btn-std">Get Quote</a><a href="hire.html" class="btn-std">Hire Me</a></div></div></div></div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150"><div class="svc-card"><div class="svc-img-wrap"><img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80" alt="Graphic Design" class="svc-top-img" loading="lazy"></div><div class="svc-body"><div class="svc-num">03</div><div class="svc-icon"><i class="fas fa-paint-brush"></i></div><h3 class="svc-title">Graphic &amp; Brand Design</h3><div class="ph">From UGX 30,000 / design</div><p class="svc-desc">Give your brand a powerful, professional identity.</p><ul class="svc-list"><li>Logo design &amp; brand kits</li><li>Business cards &amp; stationery</li><li>Flyers, posters &amp; brochures</li><li>Social media banners</li><li>Company profiles</li></ul><div class="d-flex gap-2 flex-wrap"><a href="contact.html" class="btn-std">Get Quote</a><a href="graphics.html" class="btn-std">View Work</a></div></div></div></div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200"><div class="svc-card"><div class="svc-img-wrap"><img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&q=80" alt="Blogging" class="svc-top-img" loading="lazy"></div><div class="svc-body"><div class="svc-num">04</div><div class="svc-icon"><i class="fas fa-blog"></i></div><h3 class="svc-title">Blogging &amp; Content Creation</h3><div class="ph">From UGX 20,000 / article</div><p class="svc-desc">High-quality content that engages and converts.</p><ul class="svc-list"><li>SEO blog article writing</li><li>Education &amp; academic content</li><li>Product descriptions</li><li>News &amp; media blogs</li></ul><div class="d-flex gap-2 flex-wrap"><a href="contact.html" class="btn-std">Get Quote</a><a href="hire.html" class="btn-std">Hire Me</a></div></div></div></div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="250"><div class="svc-card"><div class="svc-img-wrap"><img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=600&q=80" alt="IT Support" class="svc-top-img" loading="lazy"></div><div class="svc-body"><div class="svc-num">05</div><div class="svc-icon"><i class="fas fa-tools"></i></div><h3 class="svc-title">Software Installation &amp; IT Support</h3><div class="ph">From UGX 25,000 / service</div><p class="svc-desc">Professional and trusted IT help whenever you need it.</p><ul class="svc-list"><li>Software setup &amp; configuration</li><li>Antivirus &amp; security</li><li>Network configuration</li><li>Data backup &amp; recovery</li><li>System troubleshooting</li></ul><div class="d-flex gap-2 flex-wrap"><a href="contact.html" class="btn-std">Get Quote</a><a href="hire.html" class="btn-std">Hire Me</a></div></div></div></div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300"><div class="svc-card"><div class="svc-img-wrap"><img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&q=80" alt="Web Dev" class="svc-top-img" loading="lazy"></div><div class="svc-body"><div class="svc-num">06</div><div class="svc-icon"><i class="fas fa-mobile-alt"></i></div><h3 class="svc-title">Web &amp; Mobile App Development</h3><div class="ph">From UGX 500,000 / project</div><p class="svc-desc">Custom websites and apps built with modern tech.</p><ul class="svc-list"><li>Responsive web design</li><li>E-commerce solutions</li><li>Mobile apps (iOS &amp; Android)</li><li>Custom web applications</li><li>API development &amp; integration</li></ul><div class="d-flex gap-2 flex-wrap"><a href="contact.html" class="btn-std">Get Quote</a><a href="portfolio.html" class="btn-std">View Projects</a></div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:6rem 0;background:var(--bg-alt)">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-tag justify-content-center" style="display:flex">My Process</div>
+      <h2 class="s-heading">How I <span class="text-grad">Work</span></h2>
+    </div>
+    <div class="row justify-content-center g-4">
+      <div class="col-md-6 col-lg-2" data-aos="fade-up" data-aos-delay="50"><div class="ps-step"><div class="ps-num">01</div><div class="ps-icon"><i class="fas fa-comments"></i></div><h4 style="font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:.6rem">Consultation</h4><p style="font-size:.82rem;color:var(--text-muted);line-height:1.7">Understanding your goals and expectations.</p></div></div>
+      <div class="col-md-6 col-lg-2" data-aos="fade-up" data-aos-delay="150"><div class="ps-step"><div class="ps-num">02</div><div class="ps-icon"><i class="fas fa-tasks"></i></div><h4 style="font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:.6rem">Planning</h4><p style="font-size:.82rem;color:var(--text-muted);line-height:1.7">Roadmap with timelines &amp; cost breakdown.</p></div></div>
+      <div class="col-md-6 col-lg-2" data-aos="fade-up" data-aos-delay="250"><div class="ps-step"><div class="ps-num">03</div><div class="ps-icon"><i class="fas fa-code"></i></div><h4 style="font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:.6rem">Development</h4><p style="font-size:.82rem;color:var(--text-muted);line-height:1.7">Building step by step with regular updates.</p></div></div>
+      <div class="col-md-6 col-lg-2" data-aos="fade-up" data-aos-delay="350"><div class="ps-step"><div class="ps-num">04</div><div class="ps-icon"><i class="fas fa-vial"></i></div><h4 style="font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:.6rem">Testing</h4><p style="font-size:.82rem;color:var(--text-muted);line-height:1.7">Performance &amp; security testing.</p></div></div>
+      <div class="col-md-6 col-lg-2" data-aos="fade-up" data-aos-delay="450"><div class="ps-step"><div class="ps-num">05</div><div class="ps-icon"><i class="fas fa-rocket"></i></div><h4 style="font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:.6rem">Delivery</h4><p style="font-size:.82rem;color:var(--text-muted);line-height:1.7">Launch, training &amp; ongoing support.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:6rem 0">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-tag justify-content-center" style="display:flex">Pricing Plans</div>
+      <h2 class="s-heading">Transparent <span class="text-grad">Pricing</span></h2>
+    </div>
+    <div class="row g-4 align-items-center">
+      <div class="col-md-4" data-aos="fade-up"><div class="prc"><div style="font-size:.8rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--text-muted);margin-bottom:.5rem">Basic</div><h4 style="font-size:1.1rem;font-weight:700;color:var(--text)">Basic Website</h4><div class="p-amt">UGX 500K</div><p style="font-size:.8rem;color:var(--text-muted);margin-bottom:1.5rem">One-time payment</p><ul class="p-list"><li>Up to 5 pages</li><li>Responsive design</li><li>Contact form</li><li>Basic SEO setup</li><li>1 month free support</li></ul><a href="hire.html" class="btn-std w-100 justify-content-center">Get Started</a></div></div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100"><div class="prc pop"><div class="pop-badge">Most Popular</div><div style="font-size:.8rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--text-muted);margin-bottom:.5rem">Business</div><h4 style="font-size:1.1rem;font-weight:700;color:var(--text)">Business Website</h4><div class="p-amt">UGX 1.5M</div><p style="font-size:.8rem;color:var(--text-muted);margin-bottom:1.5rem">One-time payment</p><ul class="p-list"><li>Up to 15 pages</li><li>Custom premium design</li><li>E-commerce ready</li><li>Advanced SEO</li><li>Blog integration</li><li>3 months free support</li></ul><a href="hire.html" class="btn-gold w-100 justify-content-center">Get Started</a></div></div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200"><div class="prc"><div style="font-size:.8rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--text-muted);margin-bottom:.5rem">Enterprise</div><h4 style="font-size:1.1rem;font-weight:700;color:var(--text)">Advanced System</h4><div class="p-amt">UGX 3M+</div><p style="font-size:.8rem;color:var(--text-muted);margin-bottom:1.5rem">Custom quote</p><ul class="p-list"><li>Unlimited pages</li><li>Custom web application</li><li>Database integration</li><li>Admin dashboard</li><li>API development</li><li>6 months free support</li></ul><a href="hire.html" class="btn-std w-100 justify-content-center">Get Quote</a></div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:6rem 0;background:var(--bg-alt)">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-tag justify-content-center" style="display:flex">FAQ</div>
+      <h2 class="s-heading">Frequently Asked <span class="text-grad">Questions</span></h2>
+    </div>
+    <div class="col-lg-8 mx-auto">
+      <div class="faq-item" data-aos="fade-up"><div class="faq-q"><span>What services do you offer at Johnz Empire?</span><i class="fas fa-chevron-down"></i></div><div class="faq-a"><p>ICT Training, Digital Marketing &amp; SEO, Graphic &amp; Brand Design, Blogging &amp; Content Creation, Software Installation &amp; IT Support, and Web &amp; Mobile App Development.</p></div></div>
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="50"><div class="faq-q"><span>How does your consulting process work?</span><i class="fas fa-chevron-down"></i></div><div class="faq-a"><p>We follow 5 steps: (1) Consultation, (2) Planning, (3) Development, (4) Testing, (5) Delivery with ongoing support.</p></div></div>
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="100"><div class="faq-q"><span>What is your typical project timeline?</span><i class="fas fa-chevron-down"></i></div><div class="faq-a"><p>Simple websites: 2–3 weeks. Complex applications: 2–3 months. Detailed timelines given in every proposal.</p></div></div>
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="150"><div class="faq-q"><span>How can I get started?</span><i class="fas fa-chevron-down"></i></div><div class="faq-a"><p>Use the <a href="contact.html" style="color:var(--orange)">Contact page</a>, visit our <a href="hire.html" style="color:var(--orange)">Hire Me page</a>, or WhatsApp 0759 970 315 for a free consultation.</p></div></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="foot-brand">Johnz <span>Empire</span></div>
+        <p class="foot-tagline">Empowering brands, businesses, schools &amp; individuals with smart digital solutions tailored to their needs.</p>
+        <div class="d-flex flex-wrap gap-1 mt-3">
+          <a href="https://www.youtube.com/@Johnzempire" target="_blank" rel="noopener noreferrer" class="soc-ic" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/@johnzempire" target="_blank" rel="noopener noreferrer" class="soc-ic" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://solo.to/johnzempire" target="_blank" rel="noopener noreferrer" class="soc-ic" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://solo.to/johnzempire" target="_blank" rel="noopener noreferrer" class="soc-ic" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2 offset-lg-1">
+        <div class="foot-head">Pages</div>
+        <ul class="foot-ul">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="graphics.html">Graphics</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="foot-head">Services</div>
+        <ul class="foot-ul">
+          <li><a href="services.html">Web Development</a></li>
+          <li><a href="services.html">Mobile Apps</a></li>
+          <li><a href="services.html">ICT Training</a></li>
+          <li><a href="services.html">Graphic Design</a></li>
+          <li><a href="services.html">IT Support</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="foot-head">Contact</div>
+        <ul class="foot-ul">
+          <li><a href="tel:0759970315">0759 970 315</a></li>
+          <li><a href="mailto:contact@johnzempire.com">contact@johnzempire.com</a></li>
+          <li><a href="https://wa.me/256759970315" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+          <li><a href="hire.html">Hire Me</a></li>
+          <li><a href="contact.html">Contact Form</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="foot-hr">
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <p class="foot-copy mb-0">&copy; <span id="footerYear"></span> Johnz Empire. All rights reserved.</p>
+      <p class="foot-copy mb-0">Designed &amp; Built by Wadda John · Kampala, Uganda</p>
+    </div>
+  </div>
+</footer>
+<div class="modal fade modal-je" id="aiModal" tabindex="-1" aria-labelledby="aiModalLbl" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="aiModalLbl" style="font-family:var(--font-head)"><i class="fas fa-robot me-2" style="color:var(--orange)"></i>AI Assistant</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="padding:1.6rem">
+        <div class="ai-chat" id="aiChatBox">
+          <div class="ai-msg ai-bot"><p>Hello! I'm your AI assistant for Johnz Empire. Ask me anything about services, pricing, or how we can help grow your business.</p></div>
+        </div>
+        <div class="input-group">
+          <input type="text" class="fi2" id="aiInput" placeholder="Ask something…" style="margin-bottom:0;border-radius:10px 0 0 10px;border-right:none" aria-label="Chat input">
+          <button id="aiSend" aria-label="Send" style="padding:.85rem 1.2rem;background:var(--orange);border:none;color:#fff;border-radius:0 10px 10px 0;cursor:pointer;font-size:1rem;transition:background .2s"><i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+      <div class="modal-footer"><small style="color:var(--text-muted)">Powered by AI — real-time responses</small></div>
+    </div>
+  </div>
+</div>
+<div class="modal fade modal-je" id="hireModal" tabindex="-1" aria-labelledby="hireLbl" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="hireLbl" style="font-family:var(--font-head)">Hire Wadda John</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="padding:1.6rem">
+        <form id="hireForm">
+          <label class="fl">Your Name</label><input type="text" class="fi2" id="hName" required>
+          <label class="fl">Your Email</label><input type="email" class="fi2" id="hEmail" required>
+          <label class="fl">Service Needed</label>
+          <select class="fi2" id="hService" required style="cursor:pointer">
+            <option value="">Select a service</option>
+            <option>Web Development</option><option>Mobile App Development</option>
+            <option>Graphic Design</option><option>ICT Training</option>
+            <option>Computer / Phone Repair</option><option>IT Consulting</option>
+          </select>
+          <label class="fl">Budget Range</label>
+          <select class="fi2" id="hBudget" required style="cursor:pointer">
+            <option value="">Select budget</option>
+            <option>Under $500</option><option>$500 – $1,000</option>
+            <option>$1,000 – $5,000</option><option>Over $5,000</option>
+          </select>
+          <label class="fl">Project Details</label>
+          <textarea class="fi2" id="hDetails" rows="4" required></textarea>
+          <button type="submit" class="btn-gold w-100 justify-content-center" id="hireSendBtn">
+            <i class="fas fa-paper-plane me-2"></i>Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="shared.js"></script><script>
+document.querySelectorAll('.faq-item').forEach(item=>{
+  item.querySelector('.faq-q').addEventListener('click',()=>{
+    const open=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+    if(!open)item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Johnz Empire – Wadda John, Developer from Uganda</title>
+<meta name="description" content="Learn about Wadda John — software developer, IT consultant and ICT trainer based in Kampala, Uganda.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230B3D91'/><text y='.9em' font-size='70' text-anchor='middle' x='50' fill='%23FF8A00' font-weight='bold'>J</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+.about-sec{padding:6rem 0;background:var(--bg-alt);position:relative;overflow:hidden}
+.about-sec::before{content:'';position:absolute;top:-50%;right:-10%;width:500px;height:500px;border-radius:50%;background:var(--navy-glow);filter:blur(120px);pointer-events:none}
+.ai-img{width:100%;height:480px;object-fit:cover;border-radius:20px}
+.ab-badge{position:absolute;bottom:-18px;right:-18px;width:126px;height:126px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--orange));display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 12px 30px var(--orange-glow);z-index:2}
+.abn{font-family:var(--font-head);font-size:2.1rem;font-weight:800;color:#fff;line-height:1}
+.abl{font-size:.6rem;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.8);margin-top:.3rem;padding:0 .5rem;line-height:1.4}
+.msts{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:2rem}
+.mst{display:inline-flex;align-items:center;gap:.6rem;background:var(--bg-card);backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:12px;padding:.7rem 1rem}
+.msn{font-family:var(--font-head);font-size:1.4rem;font-weight:700;color:var(--orange)}
+.msl{font-size:.72rem;color:var(--text-muted);line-height:1.3}
+.sk-w{margin-bottom:1.4rem}
+.sk-l{display:flex;justify-content:space-between;margin-bottom:.4rem;font-size:.82rem;font-weight:500;color:var(--text-sub)}
+.sk-t{height:6px;background:rgba(255,255,255,.08);border-radius:3px;overflow:hidden}
+.sk-f{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--navy),var(--orange));width:0;transition:width 2s var(--ease)}
+.edu-row{display:flex;align-items:center;gap:.85rem;padding:.7rem 0;border-bottom:1px solid var(--border);font-size:.9rem;color:var(--text-sub)}
+.edu-row:last-child{border:none}
+.edu-ico{width:36px;height:36px;border-radius:8px;background:rgba(255,138,0,.12);display:flex;align-items:center;justify-content:center;color:var(--orange);flex-shrink:0;font-size:.85rem}
+.tl{position:relative;max-width:900px;margin:0 auto}
+.tl::after{content:'';position:absolute;width:3px;background:linear-gradient(180deg,var(--navy),var(--orange));top:0;bottom:0;left:50%;margin-left:-1.5px;border-radius:2px}
+.tl-item{padding:.8rem 3rem;position:relative;width:50%}
+.tl-item::after{content:'';position:absolute;width:20px;height:20px;border-radius:50%;background:var(--bg);border:3px solid var(--orange);top:20px;z-index:1;box-shadow:0 0 0 4px var(--orange-glow)}
+.tl-l{left:0}.tl-r{left:50%}
+.tl-l::after{right:-10px}.tl-r::after{left:-10px}
+.tl-box{background:var(--bg-card);backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:14px;padding:1.8rem;transition:all .3s var(--ease)}
+.tl-box:hover{transform:translateY(-4px);box-shadow:0 12px 35px var(--orange-glow);border-color:rgba(255,138,0,.25)}
+.tl-box h4{font-size:1rem;font-weight:700;color:var(--text);margin-bottom:.3rem}
+.tl-box h5{font-size:.85rem;font-weight:600;color:var(--orange);margin-bottom:.3rem}
+.tl-per{font-size:.75rem;color:var(--text-muted);margin-bottom:.6rem}
+.tl-desc{font-size:.83rem;color:var(--text-sub);line-height:1.7}
+.cert-card{background:var(--bg-card);backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:16px;padding:2.5rem 1.5rem;text-align:center;height:100%;transition:all .3s var(--ease)}
+.cert-card:hover{transform:translateY(-8px);box-shadow:0 18px 45px var(--orange-glow);border-color:rgba(255,138,0,.3)}
+.cert-ic{font-size:2.5rem;color:var(--orange);margin-bottom:1.2rem;display:block}
+.cert-t{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:.8rem}
+.cert-d{font-size:.85rem;color:var(--text-muted);line-height:1.75}
+@media(max-width:991px){.tl-item{width:100%;padding-left:60px;padding-right:1rem}.tl::after{left:20px}.tl-l::after,.tl-r::after{left:8px}.tl-r{left:0}}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+<div class="anim-bg"></div>
+<canvas id="pcanvas" aria-hidden="true"></canvas>
+
+<div id="ck-bar">
+  <div class="ck-text">We use cookies to enhance your experience. By continuing you agree to our <a href="#">Cookie Policy</a>.</div>
+  <div class="ck-btns">
+    <button class="ck-btn ck-accept" onclick="setCookie('ok')">Accept All</button>
+    <button class="ck-btn ck-decline" onclick="setCookie('no')">Decline</button>
+  </div>
+</div>
+<div id="soc-pop" role="dialog" aria-modal="true" aria-label="Follow Johnz Empire">
+  <div class="sp-card">
+    <button class="sp-x" onclick="closePopup()" aria-label="Close"><i class="fas fa-times"></i></button>
+    <div class="sp-head">
+      <div class="sp-title">Stay Connected with Johnz Empire</div>
+      <div class="sp-sub">Follow us for tech tips, tutorials, and digital insights from Kampala.</div>
+    </div>
+    <div class="sp-btns">
+      <a href="https://youtube.com/@johnzempire?si=VfGgbA-yuhZGEhm-" target="_blank" rel="noopener noreferrer" class="sp-btn sp-yt" onclick="closePopup()">
+        <i class="fab fa-youtube"></i><div class="sp-bl"><span>Subscribe on YouTube</span><small>Join our growing community</small></div></a>
+      <a href="https://www.tiktok.com/@johnzempire" target="_blank" rel="noopener noreferrer" class="sp-btn sp-tt" onclick="closePopup()">
+        <i class="fab fa-tiktok"></i><div class="sp-bl"><span>Follow on TikTok</span><small>Tech tips &amp; behind the scenes</small></div></a>
+      <a href="https://wa.me/256759970315" target="_blank" rel="noopener noreferrer" class="sp-btn sp-wa" onclick="closePopup()">
+        <i class="fab fa-whatsapp"></i><div class="sp-bl"><span>Message on WhatsApp</span><small>0759 970 315 · Quick replies</small></div></a>
+    </div>
+  </div>
+</div>
+<div class="float-btns">
+  <a href="https://wa.me/256759970315" target="_blank" rel="noopener noreferrer" class="float-btn wa-float" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i><span class="float-lbl">Chat on WhatsApp</span></a>
+  <button class="float-btn ai-float" data-bs-toggle="modal" data-bs-target="#aiModal" aria-label="AI Assistant">
+    <i class="fas fa-robot"></i><span class="float-lbl">AI Assistant</span></button>
+</div>
+<button class="btt" id="bttBtn" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Johnz <span class="to">Empire</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+<li class="nav-item"><a class="nav-link" href="clients.html">Clients</a></li>
+<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+<li class="nav-item"><a class="nav-link" href="graphics.html">Graphics</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+        <li class="nav-item ms-lg-2"><a class="nav-cta" href="hire.html">Hire Me</a></li>
+        <li class="nav-item ms-2">
+          <button class="theme-btn" id="themeBtn" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main id="main">
+<section class="page-hero">
+  <div class="ph-bg"></div><div class="ph-mesh"></div>
+  <div class="ph-orb pho1"></div><div class="ph-orb pho2"></div>
+  <div class="container ph-inner">
+    <div class="ph-breadcrumb"><a href="index.html">Home</a><span>/</span><span>About</span></div>
+    <div class="ph-tag"><i class="fas fa-user me-1"></i>About Me</div>
+    <h1 class="ph-title">Developer from <span class="text-grad">Buvuma</span>,<br>Based in Kampala</h1>
+    <p class="ph-sub">Full-stack developer, IT consultant, blogger, content creator and ICT trainer — building smart digital solutions for Uganda and beyond.</p>
+  </div>
+</section>
+
+<section class="about-sec">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div style="position:relative">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80&auto=format&fit=crop" alt="Developer workspace" class="ai-img" loading="lazy">
+          <div class="ab-badge"><div class="abn">5+</div><div class="abl">Years of Excellence</div></div>
+        </div>
+        <div class="msts">
+          <div class="mst"><div class="msn">150+</div><div class="msl">Happy<br>Clients</div></div>
+          <div class="mst"><div class="msn">250+</div><div class="msl">Projects<br>Done</div></div>
+          <div class="mst"><div class="msn">10+</div><div class="msl">Team<br>Members</div></div>
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="section-tag">My Story</div>
+        <h2 class="s-heading">I'm <span class="text-grad">Wadda John</span>,<br>a Developer from Buvuma</h2>
+        <p class="s-body mb-3">Born and raised in the beautiful islands of Buvuma, I discovered my passion for technology early on. Today I'm a full-time blogger, content creator, app &amp; website developer, and IT trainer based in Kampala.</p>
+        <p class="s-body mb-4">At Johnz Empire, we empower brands, businesses, organizations, schools, and individuals with smart digital solutions — tailored precisely to their needs.</p>
+        <h5 class="mb-3" style="font-size:.95rem;font-weight:700">Education</h5>
+        <div class="mb-4">
+          <div class="edu-row"><div class="edu-ico"><i class="fas fa-graduation-cap"></i></div>St. Peter's University — BSc Information Technology</div>
+          <div class="edu-row"><div class="edu-ico"><i class="fas fa-graduation-cap"></i></div>St. Joseph's SS Kakindu</div>
+          <div class="edu-row" style="border:none"><div class="edu-ico"><i class="fas fa-graduation-cap"></i></div>St. Mary's Primary Mukono</div>
+        </div>
+        <h5 class="mb-3 mt-4" style="font-size:.95rem;font-weight:700">Core Skills</h5>
+        <div class="sk-w"><div class="sk-l"><span>HTML / CSS</span><span>95%</span></div><div class="sk-t"><div class="sk-f" data-w="95"></div></div></div>
+        <div class="sk-w"><div class="sk-l"><span>JavaScript</span><span>90%</span></div><div class="sk-t"><div class="sk-f" data-w="90"></div></div></div>
+        <div class="sk-w"><div class="sk-l"><span>PHP / MySQL</span><span>85%</span></div><div class="sk-t"><div class="sk-f" data-w="85"></div></div></div>
+        <div class="sk-w"><div class="sk-l"><span>Flutter / Dart</span><span>80%</span></div><div class="sk-t"><div class="sk-f" data-w="80"></div></div></div>
+        <div class="sk-w"><div class="sk-l"><span>Graphic Design</span><span>90%</span></div><div class="sk-t"><div class="sk-f" data-w="90"></div></div></div>
+        <div class="mt-4 d-flex flex-wrap gap-3">
+          <a href="https://docs.google.com/document/d/1bMrWAQtCxHjTNYi10ZyVXz-bgwuuIqq3/edit?usp=sharing" class="btn-gold" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i>Download CV</a>
+          <a href="hire.html" class="btn-ghost"><i class="fas fa-rocket"></i>Hire Me</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:6rem 0">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-tag justify-content-center" style="display:flex">Work History</div>
+      <h2 class="s-heading">Professional <span class="text-grad">Journey</span></h2>
+    </div>
+    <div class="tl">
+      <div class="tl-item tl-l" data-aos="fade-right"><div class="tl-box"><h4>IT Consultant &amp; Developer</h4><h5>Ugahits Media</h5><div class="tl-per"><i class="fas fa-calendar me-1" style="color:var(--orange)"></i>2022 – Present</div><p class="tl-desc">IT consulting and digital solutions for media companies. Managing web projects and digital marketing campaigns.</p></div></div>
+      <div class="tl-item tl-r" data-aos="fade-left"><div class="tl-box"><h4>Software Developer</h4><h5>Sigmac Motors Uganda</h5><div class="tl-per"><i class="fas fa-calendar me-1" style="color:var(--orange)"></i>2021 – 2022</div><p class="tl-desc">Developed and maintained software for automotive business operations including inventory and CRM systems.</p></div></div>
+      <div class="tl-item tl-l" data-aos="fade-right"><div class="tl-box"><h4>IT Support &amp; Developer</h4><h5>Cyber Computer Solution</h5><div class="tl-per"><i class="fas fa-calendar me-1" style="color:var(--orange)"></i>2019 – 2021</div><p class="tl-desc">IT support services, custom software, computer repair, and small business applications across Mukono.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:6rem 0;background:var(--bg-alt)">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-tag justify-content-center" style="display:flex">Credentials</div>
+      <h2 class="s-heading">Professional <span class="text-grad">Certifications</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="50"><div class="cert-card"><i class="fas fa-code cert-ic"></i><h4 class="cert-t">Web Development</h4><p class="cert-d">Certified in HTML5, CSS3, JavaScript, and responsive design principles.</p></div></div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="150"><div class="cert-card"><i class="fas fa-mobile-alt cert-ic"></i><h4 class="cert-t">Mobile App Development</h4><p class="cert-d">Certified in Flutter and Dart for cross-platform mobile development with UI/UX expertise.</p></div></div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="250"><div class="cert-card"><i class="fas fa-tools cert-ic"></i><h4 class="cert-t">IT Support &amp; Repair</h4><p class="cert-d">Certified in hardware, software troubleshooting, and mobile device repair.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:5rem 0;text-align:center">
+  <div class="container"><div data-aos="fade-up">
+    <h2 class="s-heading">Ready to Work <span class="text-grad">Together?</span></h2>
+    <p class="s-body mx-auto mb-4" style="max-width:480px">Let's build something great. Check out my services or get in touch directly.</p>
+    <div class="d-flex gap-3 justify-content-center flex-wrap">
+      <a href="services.html" class="btn-gold"><i class="fas fa-briefcase"></i>View Services</a>
+      <a href="contact.html" class="btn-ghost"><i class="fas fa-envelope"></i>Contact Me</a>
+    </div>
+  </div></div>
+</section>
+</main>
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="foot-brand">Johnz <span>Empire</span></div>
+        <p class="foot-tagline">Empowering brands, businesses, schools &amp; individuals with smart digital solutions tailored to their needs.</p>
+        <div class="d-flex flex-wrap gap-1 mt-3">
+          <a href="https://www.youtube.com/@Johnzempire" target="_blank" rel="noopener noreferrer" class="soc-ic" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/@johnzempire" target="_blank" rel="noopener noreferrer" class="soc-ic" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://solo.to/johnzempire" target="_blank" rel="noopener noreferrer" class="soc-ic" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://solo.to/johnzempire" target="_blank" rel="noopener noreferrer" class="soc-ic" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2 offset-lg-1">
+        <div class="foot-head">Pages</div>
+        <ul class="foot-ul">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="graphics.html">Graphics</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="foot-head">Services</div>
+        <ul class="foot-ul">
+          <li><a href="services.html">Web Development</a></li>
+          <li><a href="services.html">Mobile Apps</a></li>
+          <li><a href="services.html">ICT Training</a></li>
+          <li><a href="services.html">Graphic Design</a></li>
+          <li><a href="services.html">IT Support</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="foot-head">Contact</div>
+        <ul class="foot-ul">
+          <li><a href="tel:0759970315">0759 970 315</a></li>
+          <li><a href="mailto:contact@johnzempire.com">contact@johnzempire.com</a></li>
+          <li><a href="https://wa.me/256759970315" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+          <li><a href="hire.html">Hire Me</a></li>
+          <li><a href="contact.html">Contact Form</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="foot-hr">
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <p class="foot-copy mb-0">&copy; <span id="footerYear"></span> Johnz Empire. All rights reserved.</p>
+      <p class="foot-copy mb-0">Designed &amp; Built by Wadda John · Kampala, Uganda</p>
+    </div>
+  </div>
+</footer>
+<div class="modal fade modal-je" id="aiModal" tabindex="-1" aria-labelledby="aiModalLbl" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="aiModalLbl" style="font-family:var(--font-head)"><i class="fas fa-robot me-2" style="color:var(--orange)"></i>AI Assistant</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="padding:1.6rem">
+        <div class="ai-chat" id="aiChatBox">
+          <div class="ai-msg ai-bot"><p>Hello! I'm your AI assistant for Johnz Empire. Ask me anything about services, pricing, or how we can help grow your business.</p></div>
+        </div>
+        <div class="input-group">
+          <input type="text" class="fi2" id="aiInput" placeholder="Ask something…" style="margin-bottom:0;border-radius:10px 0 0 10px;border-right:none" aria-label="Chat input">
+          <button id="aiSend" aria-label="Send" style="padding:.85rem 1.2rem;background:var(--orange);border:none;color:#fff;border-radius:0 10px 10px 0;cursor:pointer;font-size:1rem;transition:background .2s"><i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+      <div class="modal-footer"><small style="color:var(--text-muted)">Powered by AI — real-time responses</small></div>
+    </div>
+  </div>
+</div>
+<div class="modal fade modal-je" id="hireModal" tabindex="-1" aria-labelledby="hireLbl" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="hireLbl" style="font-family:var(--font-head)">Hire Wadda John</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="padding:1.6rem">
+        <form id="hireForm">
+          <label class="fl">Your Name</label><input type="text" class="fi2" id="hName" required>
+          <label class="fl">Your Email</label><input type="email" class="fi2" id="hEmail" required>
+          <label class="fl">Service Needed</label>
+          <select class="fi2" id="hService" required style="cursor:pointer">
+            <option value="">Select a service</option>
+            <option>Web Development</option><option>Mobile App Development</option>
+            <option>Graphic Design</option><option>ICT Training</option>
+            <option>Computer / Phone Repair</option><option>IT Consulting</option>
+          </select>
+          <label class="fl">Budget Range</label>
+          <select class="fi2" id="hBudget" required style="cursor:pointer">
+            <option value="">Select budget</option>
+            <option>Under $500</option><option>$500 – $1,000</option>
+            <option>$1,000 – $5,000</option><option>Over $5,000</option>
+          </select>
+          <label class="fl">Project Details</label>
+          <textarea class="fi2" id="hDetails" rows="4" required></textarea>
+          <button type="submit" class="btn-gold w-100 justify-content-center" id="hireSendBtn">
+            <i class="fas fa-paper-plane me-2"></i>Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="shared.js"></script><script>
+document.addEventListener('DOMContentLoaded',()=>{
+  document.querySelectorAll('.sk-f').forEach(el=>{
+    const w=el.getAttribute('data-w');
+    setTimeout(()=>{if(w)el.style.width=w+'%';},700);
+  });
+});
+</script>
+</body>
+</html>
