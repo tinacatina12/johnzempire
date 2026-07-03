@@ -1468,7 +1468,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   form.addEventListener('submit',async e=>{e.preventDefault();msg.className='f-msg';msg.style.display='none';btn.disabled=true;btn.textContent='Sending…';
   const fd=new FormData();fd.append('name',document.getElementById('hName').value);fd.append('email',document.getElementById('hEmail').value);fd.append('service',document.getElementById('hService').value);fd.append('budget',document.getElementById('hBudget').value);fd.append('details',document.getElementById('hDetails').value);
   const mailBody=`Name: ${document.getElementById('hName').value}\nEmail: ${document.getElementById('hEmail').value}\nService: ${document.getElementById('hService').value}\nBudget: ${document.getElementById('hBudget').value}\n\nDetails:\n${document.getElementById('hDetails').value}`;
-  const mailUrl=`mailto:contact@johnzempire.com?subject=Hire%20Inquiry&body=${encodeURIComponent(mailBody)}`;
+  const mailUrl=`mailto:https://formspree.io/f/mzdvwevp?subject=Hire%20Inquiry&body=${encodeURIComponent(mailBody)}`;
   window.open(mailUrl,'_blank');
   msg.className='f-msg ok';msg.textContent='Email opened! Click Send in your email client.';msg.style.display='block';form.reset();
   setTimeout(()=>{btn.disabled=false;btn.textContent='Send Inquiry';const m=bootstrap.Modal.getInstance(document.getElementById('hireModal'));if(m)m.hide();},3000);});
