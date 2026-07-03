@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const budget  = (document.getElementById('hBudget')  ||{}).value || '';
     const details = (document.getElementById('hDetails') ||{}).value || '';
     const body = `Name: ${name}\nEmail: ${email}\nService: ${service}\nBudget: ${budget}\n\nDetails:\n${details}`;
-    window.open(`mailto:contact@johnzempire.com?subject=Hire%20Inquiry%20from%20${encodeURIComponent(name)}&body=${encodeURIComponent(body)}`, '_blank');
+    window.open(`mailto:https://formspree.io/f/mzdvwevp?subject=Hire%20Inquiry%20from%20${encodeURIComponent(name)}&body=${encodeURIComponent(body)}`, '_blank');
     if(btn){ btn.textContent = 'Inquiry Opened ✓'; btn.style.background = '#16a34a'; }
     setTimeout(() => {
       if(btn){ btn.innerHTML = '<i class="fas fa-paper-plane me-2"></i>Send Inquiry'; btn.style.background = ''; }
