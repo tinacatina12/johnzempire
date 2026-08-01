@@ -3,14 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wadda John | Johnz Empire – Software Developer & IT Consultant, Uganda</title>
-<meta name="description" content="Wadda John is a professional software developer and IT consultant based in Kampala, Uganda. Web development, mobile apps, ICT training, and digital solutions.">
-<meta name="keywords" content="software developer, IT consultant, Uganda, web development, mobile apps, graphic design, ICT training, Kampala, Johnz Empire, Wadda John">
-<meta property="og:title" content="Wadda John | Johnz Empire – Software Developer & IT Consultant">
-<meta property="og:description" content="Professional software developer and IT consultant in Kampala, Uganda.">
+<title>Johnz Empire | Website Design, Software Development & IT Solutions in Uganda</title>
+<meta name="description" content="Johnz Empire — professional website design, software development, ICT training, graphic design and IT support in Kampala, Uganda. Get a free consultation today. Call 0759 970 315.">
+<meta name="keywords" content="website development Uganda, web developer Kampala, software development Uganda, IT support Kampala, ICT training Uganda, graphic design Kampala, business website Uganda, mobile app Uganda, IT consultant Uganda, digital marketing Uganda, Johnz Empire, Wadda John">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Wadda John — Johnz Empire, Kampala Uganda">
+<meta name="geo.region" content="UG-C"><meta name="geo.placename" content="Kampala, Uganda">
+<meta property="og:title" content="Johnz Empire | Professional Website & Software Development in Uganda">
+<meta property="og:description" content="Professional websites, business systems, ICT training, graphic design and IT support for businesses across Uganda. Free consultation — 0759 970 315.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://johnzempire.com/">
 <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLsM73BR6vQW_1YJt53OMXQ8sLjp7WcS1fDT0Hslq9jiuDZXGA1EjAtbF5WNmTrJrOFKHzsmMjVhyphenhyphenyNJyRuPKyfDTUuE4x87Ue44eytIPWUwhAsk3Ov8J6XD6h0KpzEZDjuOyfW4uCFY2SqaX9Z4he5oxTOmkL6hlF5Eg-ltPX_8_d8Cton3qNtpLv6_Y/s3264/20260110_004312%5B1%5D.jpg">
+<meta property="og:locale" content="en_UG"><meta property="og:site_name" content="Johnz Empire">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Johnz Empire | Website & Software Development Uganda">
+<meta name="twitter:description" content="Professional digital solutions for Ugandan businesses. Websites from UGX 500k. Free consultation.">
 <link rel="canonical" href="https://johnzempire.com/">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230B3D91'/><text y='.9em' font-size='70' text-anchor='middle' x='50' fill='%23FF8A00' font-weight='bold'>J</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,8 +31,8 @@
    DESIGN TOKENS
 ========================================================= */
 :root {
-  --navy:#0B3D91; --orange:#FF8A00; --orange-lt:#FFA533;
-  --orange-glow:rgba(255,138,0,.22); --navy-glow:rgba(11,61,145,.35);
+  --navy:#1E5EFF; --orange:#FFB300; --orange-lt:#FFD54F;
+  --orange-glow:rgba(255,179,0,.22); --navy-glow:rgba(30,94,255,.35);
   --bg:#06080f; --bg-alt:#0a0d1c;
   --bg-card:rgba(255,255,255,.04); --border:rgba(255,255,255,.08);
   --text:#fff; --text-sub:rgba(255,255,255,.78); --text-muted:rgba(255,255,255,.48);
@@ -40,7 +47,7 @@
   --text:#0f1326; --text-sub:rgba(15,19,38,.80); --text-muted:rgba(15,19,38,.52);
   --nav-bg:rgba(240,242,248,.88); --modal-bg:#fff;
   --input-bg:rgba(0,0,0,.05); --input-bdr:rgba(0,0,0,.18);
-  --orange-glow:rgba(255,138,0,.15); --navy-glow:rgba(11,61,145,.18);
+  --orange-glow:rgba(255,179,0,.15); --navy-glow:rgba(30,94,255,.18);
 }
 
 /* =========================================================
@@ -48,14 +55,14 @@
 ========================================================= */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:var(--font-body);color:var(--text);background:var(--bg);overflow-x:hidden;line-height:1.65;transition:background .5s var(--ease),color .5s var(--ease)}
+body{font-family:var(--font-body);color:var(--text);background:var(--bg);overflow-x:hidden;line-height:1.65;transition:background .3s var(--ease),color .3s var(--ease)}
 h1,h2,h3,h4,h5,h6{font-family:var(--font-head);font-weight:700;line-height:1.15}
 img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
 ::-webkit-scrollbar{width:5px}
 ::-webkit-scrollbar-track{background:var(--bg)}
 ::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--navy),var(--orange));border-radius:3px}
 :focus-visible{outline:3px solid var(--orange)!important;outline-offset:2px!important}
-@media(prefers-reduced-motion:reduce){*,::before,::after{animation-duration:.8s!important;transition-duration:.9s!important}}
+@media(prefers-reduced-motion:reduce){*,::before,::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 
 /* =========================================================
    UTILITIES
@@ -84,7 +91,7 @@ img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
 /* =========================================================
    ANIMATED BG
 ========================================================= */
-.anim-bg{position:fixed;inset:0;z-index:-2;background:linear-gradient(-45deg,#06080f,#0B3D91,#0a0d1c,#161b35);background-size:400% 400%;animation:bgShift 18s ease infinite}
+.anim-bg{position:fixed;inset:0;z-index:-2;background:linear-gradient(-45deg,#06080f,#1E5EFF,#0a0d1c,#161b35);background-size:400% 400%;animation:bgShift 18s ease infinite}
 [data-theme="light"] .anim-bg{background:linear-gradient(-45deg,#e8ecf4,#c9d5ea,#eef0f5,#dce3ef);background-size:400% 400%}
 @keyframes bgShift{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}
 #pcanvas{position:fixed;inset:0;z-index:-1;pointer-events:none}
@@ -93,7 +100,7 @@ img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
    NAVBAR
 ========================================================= */
 .navbar{background:var(--nav-bg);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border-bottom:1px solid var(--border);padding:.85rem 0;transition:all .3s var(--ease)}
-.navbar.scrolled{background:rgba(6,8,15,.97);padding:.55rem 0;border-bottom-color:rgba(255,138,0,.18)}
+.navbar.scrolled{background:rgba(6,8,15,.97);padding:.55rem 0;border-bottom-color:rgba(255,179,0,.18)}
 [data-theme="light"] .navbar.scrolled{background:rgba(240,242,248,.97)}
 .navbar-brand{font-family:var(--font-head);font-size:1.5rem;font-weight:800;color:var(--text)!important;letter-spacing:-.02em}
 .navbar-brand .to{color:var(--orange)!important}
@@ -126,11 +133,11 @@ img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
 ========================================================= */
 .hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:6rem;padding-bottom:4rem}
 .hero-bg-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.18;z-index:0}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(6,8,15,.97) 0%,rgba(11,61,145,.35) 55%,rgba(6,8,15,.92) 100%);z-index:1}
-.hero-mesh{position:absolute;inset:0;z-index:1;background-image:radial-gradient(rgba(255,138,0,.1) 1px,transparent 1px);background-size:30px 30px;pointer-events:none}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(6,8,15,.97) 0%,rgba(30,94,255,.35) 55%,rgba(6,8,15,.92) 100%);z-index:1}
+.hero-mesh{position:absolute;inset:0;z-index:1;background-image:radial-gradient(rgba(255,179,0,.1) 1px,transparent 1px);background-size:30px 30px;pointer-events:none}
 .hero-inner{position:relative;z-index:2}
 /* text animations */
-.hero-badge{display:inline-flex;align-items:center;gap:.6rem;background:rgba(255,138,0,.12);border:1px solid rgba(255,138,0,.25);color:var(--orange);padding:.45rem 1.1rem;border-radius:30px;font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.8rem;animation:fadeUp .7s var(--ease) .1s both}
+.hero-badge{display:inline-flex;align-items:center;gap:.6rem;background:rgba(255,179,0,.12);border:1px solid rgba(255,179,0,.25);color:var(--orange);padding:.45rem 1.1rem;border-radius:30px;font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.8rem;animation:fadeUp .7s var(--ease) .1s both}
 .badge-dot{width:7px;height:7px;border-radius:50%;background:var(--orange);animation:dotPulse 1.8s ease-in-out infinite}
 @keyframes dotPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(.85)}}
 .hero-name{font-family:var(--font-head);font-size:clamp(3rem,8vw,6rem);font-weight:800;line-height:1.02;letter-spacing:-.03em;margin-bottom:.7rem;animation:fadeUp .7s var(--ease) .25s both}
@@ -195,7 +202,7 @@ img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
 .skill-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--navy),var(--orange));width:0;transition:width 2s var(--ease)}
 .edu-row{display:flex;align-items:center;gap:.85rem;padding:.7rem 0;border-bottom:1px solid var(--border);font-size:.9rem;color:var(--text-sub)}
 .edu-row:last-child{border:none}
-.edu-ico{width:36px;height:36px;border-radius:8px;background:rgba(255,138,0,.12);display:flex;align-items:center;justify-content:center;color:var(--orange);flex-shrink:0;font-size:.85rem}
+.edu-ico{width:36px;height:36px;border-radius:8px;background:rgba(255,179,0,.12);display:flex;align-items:center;justify-content:center;color:var(--orange);flex-shrink:0;font-size:.85rem}
 
 /* =========================================================
    SERVICES
@@ -203,17 +210,17 @@ img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
 .services{padding:7rem 0;position:relative;overflow:hidden}
 .services::before{content:'';position:absolute;bottom:-20%;left:-5%;width:600px;height:600px;border-radius:50%;background:var(--navy-glow);filter:blur(160px);pointer-events:none;z-index:0}
 .svc-card{background:var(--bg-card);backdrop-filter:blur(18px);border:1px solid var(--border);border-radius:16px;overflow:hidden;height:100%;transition:all .35s var(--ease);position:relative;z-index:1}
-.svc-card:hover{transform:translateY(-8px);border-color:rgba(255,138,0,.3);box-shadow:0 20px 50px var(--orange-glow)}
+.svc-card:hover{transform:translateY(-8px);border-color:rgba(255,179,0,.3);box-shadow:0 20px 50px var(--orange-glow)}
 .svc-img-wrap{overflow:hidden;position:relative}
 .svc-img-wrap::after{content:'';position:absolute;bottom:0;left:0;right:0;height:80px;background:linear-gradient(0deg,var(--bg) 0%,transparent 100%)}
 .svc-top-img{height:160px;object-fit:cover;width:100%;transition:transform .5s var(--ease)}
 .svc-card:hover .svc-top-img{transform:scale(1.06)}
 .svc-body{padding:1.6rem}
 .svc-num{font-size:.65rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:var(--orange);margin-bottom:.5rem;opacity:.7}
-.svc-icon{width:48px;height:48px;background:linear-gradient(135deg,rgba(11,61,145,.25),rgba(255,138,0,.15));border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:var(--orange);margin-bottom:1rem;border:1px solid rgba(255,138,0,.2);transition:transform .3s var(--ease)}
+.svc-icon{width:48px;height:48px;background:linear-gradient(135deg,rgba(30,94,255,.25),rgba(255,179,0,.15));border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:var(--orange);margin-bottom:1rem;border:1px solid rgba(255,179,0,.2);transition:transform .3s var(--ease)}
 .svc-card:hover .svc-icon{transform:scale(1.1) rotate(-5deg)}
 .svc-title{font-size:1.2rem;font-weight:700;color:var(--text);margin-bottom:.5rem}
-.price-hint{display:inline-block;background:rgba(255,138,0,.12);color:var(--orange);padding:.25rem .8rem;border-radius:20px;font-size:.75rem;font-weight:600;margin-bottom:.9rem;border:1px solid rgba(255,138,0,.2)}
+.price-hint{display:inline-block;background:rgba(255,179,0,.12);color:var(--orange);padding:.25rem .8rem;border-radius:20px;font-size:.75rem;font-weight:600;margin-bottom:.9rem;border:1px solid rgba(255,179,0,.2)}
 .svc-desc{font-size:.85rem;color:var(--text-muted);line-height:1.75;margin-bottom:1rem}
 .svc-list{list-style:none;padding:0;margin-bottom:1.2rem}
 .svc-list li{font-size:.82rem;color:var(--text-sub);padding:.35rem 0 .35rem 1.1rem;position:relative;border-bottom:1px solid var(--border)}
@@ -231,8 +238,8 @@ img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
 .proc-overlay{position:absolute;inset:0;background:linear-gradient(180deg,var(--bg) 0%,var(--bg-alt) 30%,var(--bg-alt) 70%,var(--bg) 100%);z-index:1}
 .proc-step{text-align:center;padding:2.5rem 1.5rem;position:relative;z-index:2}
 .proc-step::before{content:'';position:absolute;inset:0;background:var(--bg-card);backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:16px;z-index:-1;transition:all .3s var(--ease)}
-.proc-step:hover::before{transform:translateY(-8px);border-color:rgba(255,138,0,.3);box-shadow:0 16px 40px var(--orange-glow)}
-.proc-num{font-family:var(--font-head);font-size:3rem;font-weight:800;color:rgba(255,138,0,.08);-webkit-text-stroke:1px rgba(255,138,0,.2);line-height:1;margin-bottom:.5rem}
+.proc-step:hover::before{transform:translateY(-8px);border-color:rgba(255,179,0,.3);box-shadow:0 16px 40px var(--orange-glow)}
+.proc-num{font-family:var(--font-head);font-size:3rem;font-weight:800;color:rgba(255,179,0,.08);-webkit-text-stroke:1px rgba(255,179,0,.2);line-height:1;margin-bottom:.5rem}
 .proc-icon{width:72px;height:72px;margin:0 auto 1.2rem;background:linear-gradient(135deg,var(--navy),var(--orange));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.6rem;color:#fff;box-shadow:0 8px 25px var(--orange-glow);transition:transform .3s var(--bounce)}
 .proc-step:hover .proc-icon{transform:scale(1.15) rotate(-8deg)}
 .proc-connector{position:absolute;top:50px;right:-50%;width:100%;height:2px;background:linear-gradient(90deg,var(--orange),transparent);z-index:0;opacity:.4}
@@ -243,7 +250,7 @@ img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
 ========================================================= */
 .stats{padding:6rem 0;position:relative;overflow:hidden}
 .stats-bg-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.12;z-index:0}
-.stats-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(11,61,145,.92),rgba(6,8,15,.88));z-index:1}
+.stats-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(30,94,255,.92),rgba(6,8,15,.88));z-index:1}
 .stat-item{text-align:center;padding:2.5rem 1rem;position:relative;z-index:2}
 .stat-item:not(:last-child)::after{content:'';position:absolute;right:0;top:50%;transform:translateY(-50%);height:60px;width:1px;background:rgba(255,255,255,.1)}
 .stat-icon{font-size:2rem;color:var(--orange);margin-bottom:1rem;opacity:.8}
@@ -255,7 +262,7 @@ img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
 ========================================================= */
 .why{padding:7rem 0;background:var(--bg-alt)}
 .reason-card{border-radius:16px;overflow:hidden;height:100%;transition:all .35s var(--ease);border:1px solid var(--border)}
-.reason-card:hover{transform:translateY(-8px);box-shadow:0 20px 50px var(--orange-glow);border-color:rgba(255,138,0,.3)}
+.reason-card:hover{transform:translateY(-8px);box-shadow:0 20px 50px var(--orange-glow);border-color:rgba(255,179,0,.3)}
 .reason-img{height:200px;object-fit:cover;width:100%;transition:transform .5s var(--ease)}
 .reason-card:hover .reason-img{transform:scale(1.06)}
 .reason-body{background:var(--bg-card);backdrop-filter:blur(16px);padding:1.8rem}
@@ -274,7 +281,7 @@ img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
 .c-lbl{display:inline-flex;align-items:center;gap:.4rem;padding:.3rem .85rem;border-radius:20px;font-size:.72rem;font-weight:600;margin-bottom:.75rem;letter-spacing:.06em}
 .lp{background:rgba(239,68,68,.12);color:#f87171;border:1px solid rgba(239,68,68,.2)}
 .ls{background:rgba(34,197,94,.12);color:#4ade80;border:1px solid rgba(34,197,94,.2)}
-.lo{background:rgba(255,138,0,.12);color:var(--orange);border:1px solid rgba(255,138,0,.2)}
+.lo{background:rgba(255,179,0,.12);color:var(--orange);border:1px solid rgba(255,179,0,.2)}
 .ct{font-size:.85rem;color:var(--text-sub);line-height:1.75;margin-bottom:.6rem}
 
 /* =========================================================
@@ -283,7 +290,7 @@ img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
 .portfolio{padding:7rem 0;background:var(--bg-alt)}
 .pf-filters{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center;margin-bottom:3rem}
 .pf-btn{padding:.5rem 1.3rem;border:1.5px solid var(--border);color:var(--text-muted);border-radius:30px;font-size:.78rem;font-weight:500;cursor:pointer;transition:all .25s;background:transparent}
-.pf-btn.active,.pf-btn:hover{border-color:var(--orange);color:var(--orange);background:rgba(255,138,0,.08)}
+.pf-btn.active,.pf-btn:hover{border-color:var(--orange);color:var(--orange);background:rgba(255,179,0,.08)}
 .port-card{border-radius:14px;overflow:hidden;position:relative;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
 .port-card:hover{transform:translateY(-8px);box-shadow:0 20px 50px rgba(0,0,0,.4)}
 .port-img{height:230px;object-fit:cover;width:100%;transition:transform .5s var(--ease)}
@@ -298,11 +305,11 @@ img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
 ========================================================= */
 .blog{padding:7rem 0}
 .blog-card{background:var(--bg-card);backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:16px;overflow:hidden;height:100%;transition:all .3s var(--ease)}
-.blog-card:hover{transform:translateY(-8px);box-shadow:0 18px 45px var(--orange-glow);border-color:rgba(255,138,0,.25)}
+.blog-card:hover{transform:translateY(-8px);box-shadow:0 18px 45px var(--orange-glow);border-color:rgba(255,179,0,.25)}
 .blog-img{height:190px;object-fit:cover;width:100%;transition:transform .5s var(--ease)}
 .blog-card:hover .blog-img{transform:scale(1.06)}
 .blog-body{padding:1.5rem}
-.blog-cat{display:inline-block;background:rgba(255,138,0,.12);color:var(--orange);border:1px solid rgba(255,138,0,.2);padding:.25rem .8rem;border-radius:20px;font-size:.7rem;font-weight:600;margin-bottom:.75rem;letter-spacing:.06em;text-transform:uppercase}
+.blog-cat{display:inline-block;background:rgba(255,179,0,.12);color:var(--orange);border:1px solid rgba(255,179,0,.2);padding:.25rem .8rem;border-radius:20px;font-size:.7rem;font-weight:600;margin-bottom:.75rem;letter-spacing:.06em;text-transform:uppercase}
 .blog-title{font-size:1rem;font-weight:700;color:var(--text);margin-bottom:.6rem;line-height:1.4}
 .blog-exc{font-size:.83rem;color:var(--text-muted);line-height:1.7;margin-bottom:1.2rem}
 
@@ -315,9 +322,9 @@ img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
 .systems{padding:7rem 0}
 .sys-card{background:var(--bg-card);backdrop-filter:blur(18px);border:1px solid var(--border);border-radius:16px;padding:2.2rem;text-align:center;height:100%;transition:all .35s var(--ease);position:relative;overflow:hidden}
 .sys-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--navy),var(--orange));transform:scaleX(0);transition:transform .4s var(--ease)}
-.sys-card:hover{transform:translateY(-8px);box-shadow:0 20px 50px var(--orange-glow);border-color:rgba(255,138,0,.3)}
+.sys-card:hover{transform:translateY(-8px);box-shadow:0 20px 50px var(--orange-glow);border-color:rgba(255,179,0,.3)}
 .sys-card:hover::after{transform:scaleX(1)}
-.sys-icon{width:64px;height:64px;margin:0 auto 1.2rem;background:linear-gradient(135deg,rgba(11,61,145,.25),rgba(255,138,0,.2));border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;color:var(--orange);border:1px solid rgba(255,138,0,.2)}
+.sys-icon{width:64px;height:64px;margin:0 auto 1.2rem;background:linear-gradient(135deg,rgba(30,94,255,.25),rgba(255,179,0,.2));border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;color:var(--orange);border:1px solid rgba(255,179,0,.2)}
 .sys-title{font-size:1.15rem;font-weight:700;color:var(--text);margin-bottom:.75rem}
 .sys-desc{font-size:.87rem;color:var(--text-muted);line-height:1.75;margin-bottom:1.2rem}
 
@@ -326,7 +333,7 @@ img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
 .pricing::before{content:'';position:absolute;top:-30%;right:-10%;width:500px;height:500px;border-radius:50%;background:var(--orange-glow);filter:blur(150px);pointer-events:none}
 .price-card{background:var(--bg-card);backdrop-filter:blur(18px);border:1px solid var(--border);border-radius:20px;padding:2.5rem 2rem;height:100%;transition:all .35s var(--ease);text-align:center;position:relative}
 .price-card:hover{transform:translateY(-10px);box-shadow:0 25px 60px var(--orange-glow)}
-.price-card.pop{border:2px solid var(--orange);transform:scale(1.04);background:rgba(255,138,0,.04)}
+.price-card.pop{border:2px solid var(--orange);transform:scale(1.04);background:rgba(255,179,0,.04)}
 .price-card.pop:hover{transform:scale(1.07) translateY(-8px)}
 .pop-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:linear-gradient(90deg,var(--navy),var(--orange));color:#fff;padding:.4rem 1.4rem;border-radius:20px;font-weight:700;font-size:.75rem;white-space:nowrap;letter-spacing:.06em;text-transform:uppercase}
 .price-tier{font-size:.8rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--text-muted);margin-bottom:.5rem}
@@ -340,7 +347,7 @@ img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
 /* CERTIFICATIONS */
 .certs{padding:7rem 0}
 .cert-card{background:var(--bg-card);backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:16px;padding:2.5rem 1.5rem;text-align:center;height:100%;transition:all .3s var(--ease)}
-.cert-card:hover{transform:translateY(-8px);box-shadow:0 18px 45px var(--orange-glow);border-color:rgba(255,138,0,.3)}
+.cert-card:hover{transform:translateY(-8px);box-shadow:0 18px 45px var(--orange-glow);border-color:rgba(255,179,0,.3)}
 .cert-icon{font-size:2.5rem;color:var(--orange);margin-bottom:1.2rem;display:block}
 .cert-title{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:.8rem}
 .cert-desc{font-size:.85rem;color:var(--text-muted);line-height:1.75}
@@ -348,8 +355,8 @@ img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
 /* TESTIMONIALS */
 .testimonials{padding:7rem 0;background:var(--bg-alt)}
 .tst-card{background:var(--bg-card);backdrop-filter:blur(18px);border:1px solid var(--border);border-radius:20px;padding:2.5rem;height:100%;transition:all .3s var(--ease);position:relative;overflow:hidden}
-.tst-card::before{content:'"';position:absolute;top:-20px;left:20px;font-family:var(--font-head);font-size:8rem;color:rgba(255,138,0,.06);line-height:1;pointer-events:none}
-.tst-card:hover{transform:translateY(-6px);box-shadow:0 18px 45px var(--orange-glow);border-color:rgba(255,138,0,.25)}
+.tst-card::before{content:'"';position:absolute;top:-20px;left:20px;font-family:var(--font-head);font-size:8rem;color:rgba(255,179,0,.06);line-height:1;pointer-events:none}
+.tst-card:hover{transform:translateY(-6px);box-shadow:0 18px 45px var(--orange-glow);border-color:rgba(255,179,0,.25)}
 .stars{display:flex;gap:3px;margin-bottom:1rem}
 .stars i{color:var(--orange);font-size:.85rem}
 .tst-text{font-size:.9rem;color:var(--text-sub);line-height:1.85;font-style:italic;margin-bottom:1.8rem}
@@ -374,7 +381,7 @@ img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
 .tl-left::after{right:-10px}
 .tl-right::after{left:-10px}
 .tl-box{background:var(--bg-card);backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:14px;padding:1.8rem;transition:all .3s var(--ease)}
-.tl-box:hover{transform:translateY(-4px);box-shadow:0 12px 35px var(--orange-glow);border-color:rgba(255,138,0,.25)}
+.tl-box:hover{transform:translateY(-4px);box-shadow:0 12px 35px var(--orange-glow);border-color:rgba(255,179,0,.25)}
 .tl-box h4{font-size:1rem;font-weight:700;color:var(--text);margin-bottom:.3rem}
 .tl-box h5{font-size:.85rem;font-weight:600;color:var(--orange);margin-bottom:.3rem}
 .tl-period{font-size:.75rem;color:var(--text-muted);margin-bottom:.6rem}
@@ -383,7 +390,7 @@ img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
 /* FAQ */
 .faq{padding:7rem 0;background:var(--bg-alt)}
 .faq-item{background:var(--bg-card);backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:12px;margin-bottom:12px;overflow:hidden;transition:border-color .3s}
-.faq-item.open{border-color:rgba(255,138,0,.3)}
+.faq-item.open{border-color:rgba(255,179,0,.3)}
 .faq-q{padding:1.4rem 1.6rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:.92rem;color:var(--text);gap:1rem;user-select:none}
 .faq-q i{color:var(--orange);transition:transform .3s}
 .faq-item.open .faq-q i{transform:rotate(180deg)}
@@ -397,15 +404,15 @@ img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
 .contact-form-wrap{background:var(--bg-card);backdrop-filter:blur(18px);border:1px solid var(--border);border-radius:20px;padding:2.5rem}
 .f-lbl{font-size:.82rem;font-weight:500;color:var(--text-sub);margin-bottom:.4rem;display:block}
 .f-inp{width:100%;background:var(--input-bg);border:1px solid var(--input-bdr);color:var(--text);border-radius:10px;padding:.85rem 1.1rem;font-size:.9rem;font-family:var(--font-body);outline:none;transition:all .25s var(--ease);margin-bottom:1.2rem}
-.f-inp:focus{border-color:var(--orange);background:rgba(255,138,0,.05);box-shadow:0 0 0 3px rgba(255,138,0,.1)}
+.f-inp:focus{border-color:var(--orange);background:rgba(255,179,0,.05);box-shadow:0 0 0 3px rgba(255,179,0,.1)}
 .f-inp::placeholder{color:var(--text-muted)}
 textarea.f-inp{resize:vertical;min-height:130px}
 .f-msg{padding:.8rem 1.1rem;border-radius:8px;margin-bottom:1rem;font-size:.85rem;font-weight:500;display:none}
 .f-msg.ok{display:block;background:rgba(34,197,94,.12);color:#4ade80;border:1px solid rgba(34,197,94,.25)}
 .f-msg.err{display:block;background:rgba(239,68,68,.12);color:#f87171;border:1px solid rgba(239,68,68,.25)}
 .ci-card{background:var(--bg-card);backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:14px;padding:1.4rem;margin-bottom:1rem;display:flex;align-items:flex-start;gap:1rem;transition:all .25s}
-.ci-card:hover{border-color:rgba(255,138,0,.3);transform:translateX(4px)}
-.ci-ico{width:44px;height:44px;background:linear-gradient(135deg,rgba(11,61,145,.3),rgba(255,138,0,.2));border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--orange);font-size:1rem;flex-shrink:0}
+.ci-card:hover{border-color:rgba(255,179,0,.3);transform:translateX(4px)}
+.ci-ico{width:44px;height:44px;background:linear-gradient(135deg,rgba(30,94,255,.3),rgba(255,179,0,.2));border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--orange);font-size:1rem;flex-shrink:0}
 .ci-lbl{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:.2rem}
 .ci-val{font-size:.9rem;color:var(--text-sub)}
 .wa-block{background:rgba(37,211,102,.08);border:1px solid rgba(37,211,102,.2);border-radius:14px;padding:1.4rem;margin-bottom:1rem}
@@ -447,8 +454,8 @@ footer{background:rgba(4,6,12,.97);padding:5rem 0 2rem;border-top:1px solid var(
 .modal-je .modal-header,.modal-je .modal-footer{border-color:var(--border)}
 .ai-chat{height:290px;overflow-y:auto;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:10px;padding:1rem;margin-bottom:.9rem;scroll-behavior:smooth}
 .ai-m{margin-bottom:.9rem;padding:.8rem 1.1rem;border-radius:12px;max-width:85%;clear:both;font-size:.86rem;line-height:1.6;word-wrap:break-word}
-.ai-bot{background:rgba(11,61,145,.25);float:left;border-top-left-radius:4px}
-.ai-user{background:rgba(255,138,0,.2);float:right;text-align:right;border-top-right-radius:4px}
+.ai-bot{background:rgba(30,94,255,.25);float:left;border-top-left-radius:4px}
+.ai-user{background:rgba(255,179,0,.2);float:right;text-align:right;border-top-right-radius:4px}
 .typing-dots{display:flex;gap:4px;padding:.5rem .8rem;align-items:center}
 .typing-dots span{width:7px;height:7px;border-radius:50%;background:var(--orange);animation:dotB 1.4s infinite ease-in-out}
 .typing-dots span:nth-child(2){animation-delay:.2s}
@@ -519,34 +526,34 @@ footer{background:rgba(4,6,12,.97);padding:5rem 0 2rem;border-top:1px solid var(
 .sp-bl small{font-size:.68rem;opacity:.75;font-weight:400}
 
 /* ===== PAGE BAR ===== */
-.page-bar{background:rgba(11,61,145,.1);border-bottom:1px solid rgba(255,138,0,.1);padding:.45rem 0;display:flex;justify-content:center;gap:1.2rem;flex-wrap:wrap}
+.page-bar{background:rgba(30,94,255,.1);border-bottom:1px solid rgba(255,179,0,.1);padding:.45rem 0;display:flex;justify-content:center;gap:1.2rem;flex-wrap:wrap}
 .page-bar a{font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--text-sub);padding:.28rem .75rem;border-radius:20px;border:1px solid transparent;transition:all .2s}
-.page-bar a:hover,.page-bar a.cur{color:var(--orange);border-color:rgba(255,138,0,.25);background:rgba(255,138,0,.07)}
+.page-bar a:hover,.page-bar a.cur{color:var(--orange);border-color:rgba(255,179,0,.25);background:rgba(255,179,0,.07)}
 
 /* ===== VIDEO / ANIMATION SECTION ===== */
 .vid-sec{padding:5rem 0;position:relative;overflow:hidden;background:#040608}
 .vid-orb{position:absolute;border-radius:50%;filter:blur(100px);animation:vob 8s ease-in-out infinite;pointer-events:none}
-.vo1{width:500px;height:500px;background:rgba(11,61,145,.28);top:-150px;left:-100px}
-.vo2{width:400px;height:400px;background:rgba(255,138,0,.13);bottom:-100px;right:-50px;animation-delay:4s}
-.vo3{width:280px;height:280px;background:rgba(11,61,145,.18);top:30%;right:20%;animation-delay:2s}
+.vo1{width:500px;height:500px;background:rgba(30,94,255,.28);top:-150px;left:-100px}
+.vo2{width:400px;height:400px;background:rgba(255,179,0,.13);bottom:-100px;right:-50px;animation-delay:4s}
+.vo3{width:280px;height:280px;background:rgba(30,94,255,.18);top:30%;right:20%;animation-delay:2s}
 @keyframes vob{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-28px) scale(1.05)}}
 .vid-inner{position:relative;z-index:2}
 .vid-h{font-family:var(--font-head);font-size:clamp(1.7rem,3.5vw,2.6rem);font-weight:800;color:#fff;text-align:center;line-height:1.2;margin-bottom:.7rem}
 .vid-s{text-align:center;color:rgba(255,255,255,.48);font-size:.93rem;margin-bottom:3rem;font-weight:300}
 .svc-grid6{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;max-width:880px;margin:0 auto}
 .sg-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:1.8rem 1.3rem;text-align:center;transition:all .4s var(--ease);cursor:default;position:relative;overflow:hidden}
-.sg-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(11,61,145,.1),rgba(255,138,0,.05));opacity:0;transition:opacity .4s}
-.sg-card:hover{transform:translateY(-8px);border-color:rgba(255,138,0,.3);box-shadow:0 20px 50px rgba(255,138,0,.14)}
+.sg-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(30,94,255,.1),rgba(255,179,0,.05));opacity:0;transition:opacity .4s}
+.sg-card:hover{transform:translateY(-8px);border-color:rgba(255,179,0,.3);box-shadow:0 20px 50px rgba(255,179,0,.14)}
 .sg-card:hover::before{opacity:1}
 .sg-num{font-family:var(--font-head);font-size:2.5rem;font-weight:800;background:linear-gradient(135deg,var(--orange),#ffd080);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:.4rem}
 .sg-ic{font-size:1.8rem;color:var(--orange);margin-bottom:.8rem;display:block}
 .sg-t{font-family:var(--font-head);font-size:.95rem;font-weight:700;color:#fff;margin-bottom:.35rem}
 .sg-d{font-size:.75rem;color:rgba(255,255,255,.48);line-height:1.6}
 .v-dots{display:flex;justify-content:center;gap:.5rem;margin-top:2.2rem}
-.vd{width:8px;height:8px;border-radius:50%;background:rgba(255,138,0,.3);animation:vdp 2s ease-in-out infinite}
+.vd{width:8px;height:8px;border-radius:50%;background:rgba(255,179,0,.3);animation:vdp 2s ease-in-out infinite}
 .vd:nth-child(2){animation-delay:.3s}
 .vd:nth-child(3){animation-delay:.6s}
-@keyframes vdp{0%,100%{background:rgba(255,138,0,.3);transform:scale(1)}50%{background:var(--orange);transform:scale(1.4)}}
+@keyframes vdp{0%,100%{background:rgba(255,179,0,.3);transform:scale(1)}50%{background:var(--orange);transform:scale(1.4)}}
 @media(max-width:767px){.svc-grid6{grid-template-columns:1fr 1fr}}
 @media(max-width:480px){.svc-grid6{grid-template-columns:1fr}}
 
@@ -566,10 +573,11 @@ footer{background:rgba(4,6,12,.97);padding:5rem 0 2rem;border-top:1px solid var(
 .mq-card{width:250px;height:158px;border-radius:12px;overflow:hidden;flex-shrink:0;position:relative;cursor:pointer}
 .mq-card img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
 .mq-card:hover img{transform:scale(1.08)}
-.mq-ov{position:absolute;inset:0;background:rgba(6,8,15,.72);display:flex;align-items:flex-end;padding:.8rem 1rem;opacity:0;transition:opacity .10s}
+.mq-ov{position:absolute;inset:0;background:rgba(6,8,15,.72);display:flex;align-items:flex-end;padding:.8rem 1rem;opacity:0;transition:opacity .3s}
 .mq-card:hover .mq-ov{opacity:1}
 .mq-ov span{font-size:.75rem;color:#fff;font-weight:600}
 </style>
+<link rel="stylesheet" href="shared.css">
 </head>
 <body>
 
@@ -577,7 +585,7 @@ footer{background:rgba(4,6,12,.97);padding:5rem 0 2rem;border-top:1px solid var(
 
 <!-- ===== COOKIE CONSENT ===== -->
 <div id="ck-bar">
-  <div class="ck-text">We use cookies to enhance your experience. By continuing, you agree to our <a href="#">Cookie Policy</a>.</div>
+  <div class="ck-text">We use cookies to enhance your experience. By continuing, you agree to our <a href="contact.html#privacy" style="color:var(--orange)">Cookie Policy</a>.</div>
   <div class="ck-btns">
     <button class="ck-btn ck-accept" onclick="setCK('ok')">Accept All</button>
     <button class="ck-btn ck-decline" onclick="setCK('no')">Decline</button>
@@ -668,10 +676,13 @@ footer{background:rgba(4,6,12,.97);padding:5rem 0 2rem;border-top:1px solid var(
         <div class="hero-badge"><span class="badge-dot"></span>Available for New Projects</div>
         <h1 class="hero-name">Wadda<br><span class="text-grad">John</span></h1>
         <div class="hero-role"><span id="typer"></span><span class="cursor"></span></div>
-        <p class="hero-desc">A passionate Ugandan developer building smart digital solutions for businesses, schools, and individuals. At Johnz Empire, your vision becomes reality.</p>
+        <p class="hero-desc">Professional websites from <strong style="color:var(--orange)">UGX 500,000</strong>. Mobile apps, business systems, ICT training &amp; graphic design for businesses across Uganda. Based in Kampala — responding within 2 hours.</p>
         <div class="hero-ctas">
-          <a href="#contact" class="btn-gold"><i class="fas fa-rocket"></i>Hire Me</a>
-          <a href="#case-studies" class="btn-ghost"><i class="fas fa-eye"></i>View Portfolio</a>
+          <a href="hire.html" class="btn-gold" onclick="trackJeEvent('hero_cta','consultation')">
+            <i class="fas fa-comments me-1"></i>Get Free Consultation</a>
+          <a href="https://wa.me/256759970315?text=Hello%20Johnz%20Empire%2C%20I%20visited%20your%20website%20and%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="btn-wa" onclick="trackJeEvent('hero_cta','whatsapp')">
+            <i class="fab fa-whatsapp"></i>WhatsApp Now</a>
+          <a href="portfolio.html" class="btn-ghost"><i class="fas fa-eye"></i>View Portfolio</a>
           <a href="https://docs.google.com/document/d/1bMrWAQtCxHjTNYi10ZyVXz-bgwuuIqq3/edit" target="_blank" rel="noopener noreferrer" class="btn-ghost"><i class="fas fa-download"></i>CV</a>
         </div>
         <div class="tech-stack">
@@ -746,7 +757,7 @@ footer{background:rgba(4,6,12,.97);padding:5rem 0 2rem;border-top:1px solid var(
   <div class="vid-orb vo1"></div><div class="vid-orb vo2"></div><div class="vid-orb vo3"></div>
   <div class="container vid-inner">
     <div class="text-center mb-2" data-aos="fade-up">
-      <div class="section-tag justify-content-center" style="display:flex;color:rgba(255,138,0,.8)">What We Do</div>
+      <div class="section-tag justify-content-center" style="display:flex;color:rgba(255,179,0,.8)">What We Do</div>
       <div class="vid-h">Everything Your Business Needs —<br><span class="text-grad">Under One Roof</span></div>
       <div class="vid-s">From websites to branding, training to consulting — every digital dimension covered</div>
     </div>
@@ -1070,7 +1081,7 @@ footer{background:rgba(4,6,12,.97);padding:5rem 0 2rem;border-top:1px solid var(
       <div class="mq-card"><img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=280&q=75" alt="Pro" loading="lazy"><div class="mq-ov"><span>Professional Services</span></div></div>
     </div>
   </div>
-  <div class="text-center mt-3"><a href="portfolio.html" class="btn-outline-je" style="color:var(--orange);border-color:rgba(255,138,0,.3)">View All Projects <i class="fas fa-arrow-right ms-1"></i></a></div>
+  <div class="text-center mt-3"><a href="portfolio.html" class="btn-outline-je" style="color:var(--orange);border-color:rgba(255,179,0,.3)">View All Projects <i class="fas fa-arrow-right ms-1"></i></a></div>
 </section>
 
 <!-- ============================================================ PORTFOLIO -->
@@ -1090,34 +1101,16 @@ footer{background:rgba(4,6,12,.97);padding:5rem 0 2rem;border-top:1px solid var(
   </div>
 </section>
 
-<!-- ============================================================ BLOG -->
+<!-- ============================================================ BLOG — Live from techinformer4.blogspot.com -->
 <section id="blog" class="blog">
   <div class="container">
-    <div class="row mb-5 text-center"><div class="col-12">
-      <div class="section-tag justify-content-center" style="display:flex">Latest Articles</div>
-      <h2 class="s-heading">Insights & <span class="text-grad">Tech Guides</span></h2>
+    <div class="row mb-5 text-center" data-aos="fade-up"><div class="col-12">
+      <div class="section-tag justify-content-center" style="display:flex">Tech Informer Blog</div>
+      <h2 class="s-heading">Insights &amp; <span class="text-grad">Tech Guides</span></h2>
+      <p class="s-body mx-auto" style="max-width:520px">Fresh technology articles for Ugandan businesses — from our active blog at <a href="https://techinformer4.blogspot.com/" target="_blank" rel="noopener noreferrer" style="color:var(--orange)">techinformer4.blogspot.com</a></p>
     </div></div>
-    <div class="row g-4">
-      <div class="col-md-6 col-lg-4" data-aos="fade-up">
-        <div class="blog-card">
-          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=80&auto=format&fit=crop" alt="Web development coding" class="blog-img" loading="lazy">
-          <div class="blog-body"><span class="blog-cat">Web Development</span><h5 class="blog-title">How to Build a Responsive Website in 2026</h5><p class="blog-exc">Learn the latest techniques for creating websites that look great on every device and rank well on Google.</p><a href="#" class="btn-std">Read More</a></div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="blog-card">
-          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80&auto=format&fit=crop" alt="Digital marketing analytics" class="blog-img" loading="lazy">
-          <div class="blog-body"><span class="blog-cat">Digital Marketing</span><h5 class="blog-title">5 SEO Tips for Ugandan Businesses</h5><p class="blog-exc">Boost your local search rankings with practical strategies tailored for East African businesses.</p><a href="#" class="btn-std">Read More</a></div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="blog-card">
-          <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&q=80&auto=format&fit=crop" alt="Mobile app development" class="blog-img" loading="lazy">
-          <div class="blog-body"><span class="blog-cat">Mobile Apps</span><h5 class="blog-title">Why Your Business Needs a Mobile App</h5><p class="blog-exc">Discover how a mobile app can transform customer engagement and dramatically increase revenue.</p><a href="#" class="btn-std">Read More</a></div>
-        </div>
-      </div>
-    </div>
-    <div class="text-center mt-5"><a href="#" class="btn-ghost">View All Articles <i class="fas fa-arrow-right ms-1"></i></a></div>
+    <!-- Dynamic blog grid — populated by shared.js Blogger API -->
+    <div class="row g-4" id="blogGrid"></div>
   </div>
 </section>
 
@@ -1162,11 +1155,94 @@ footer{background:rgba(4,6,12,.97);padding:5rem 0 2rem;border-top:1px solid var(
         <div class="price-card"><div class="price-tier">Basic</div><h4 style="font-size:1.1rem;font-weight:700;color:var(--text)">Basic Website</h4><div class="price-amt">UGX 500K</div><div class="price-period">One-time payment</div><ul class="price-list"><li>Up to 5 pages</li><li>Responsive design</li><li>Contact form</li><li>Basic SEO setup</li><li>1 month free support</li></ul><a href="#contact" class="btn-std w-100 justify-content-center">Get Started</a></div>
       </div>
       <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="price-card pop"><div class="pop-badge">Most Popular</div><div class="price-tier">Business</div><h4 style="font-size:1.1rem;font-weight:700;color:var(--text)">Business Website</h4><div class="price-amt">UGX 1.5M</div><div class="price-period">One-time payment</div><ul class="price-list"><li>Up to 15 pages</li><li>Custom premium design</li><li>E-commerce ready</li><li>Advanced SEO</li><li>Blog integration</li><li>3 months free support</li></ul><a href="#contact" class="btn-gold w-100 justify-content-center">Get Started</a></div>
+        <div class="price-card pop"><div class="pop-badge">Most Popular</div><div class="price-tier">Business</div><h4 style="font-size:1.1rem;font-weight:700;color:var(--text)">Business Website</h4><div class="price-amt">UGX 1.5M</div><div class="price-period">One-time payment</div><ul class="price-list"><li>Up to 15 pages</li><li>Custom premium design</li><li>E-commerce ready</li><li>Advanced SEO</li><li>Blog integration</li><li>3 months free support</li></ul><a href="hire.html" onclick="trackJeEvent('pricing_cta','get_started')" class="btn-gold w-100 justify-content-center">Get Started</a></div>
       </div>
       <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="price-card"><div class="price-tier">Enterprise</div><h4 style="font-size:1.1rem;font-weight:700;color:var(--text)">Advanced System</h4><div class="price-amt">UGX 3M+</div><div class="price-period">Custom quote</div><ul class="price-list"><li>Unlimited pages</li><li>Custom web application</li><li>Database integration</li><li>Admin dashboard</li><li>API development</li><li>6 months free support</li></ul><a href="#contact" class="btn-std w-100 justify-content-center">Get Quote</a></div>
+        <div class="price-card"><div class="price-tier">Enterprise</div><h4 style="font-size:1.1rem;font-weight:700;color:var(--text)">Advanced System</h4><div class="price-amt">UGX 3M+</div><div class="price-period">Custom quote</div><ul class="price-list"><li>Unlimited pages</li><li>Custom web application</li><li>Database integration</li><li>Admin dashboard</li><li>API development</li><li>6 months free support</li></ul><a href="hire.html" onclick="trackJeEvent('pricing_cta','get_quote')" class="btn-std w-100 justify-content-center">Get Quote</a></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ MOBILE MONEY PAYMENTS -->
+<section id="payments" class="momo-section">
+  <div class="container">
+    <div class="row mb-5 text-center" data-aos="fade-up"><div class="col-12">
+      <div class="section-tag justify-content-center" style="display:flex">Deposit &amp; Payment</div>
+      <h2 class="s-heading">Pay Securely with <span class="text-grad">Mobile Money</span></h2>
+      <p class="s-body mx-auto" style="max-width:540px">Start your project by paying a 50% deposit after accepting your quotation. We accept MTN MoMo and Airtel Money across Uganda.</p>
+    </div></div>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="momo-card mb-3">
+          <h5 style="font-family:var(--font-head);font-weight:700;color:var(--text);margin-bottom:1.2rem"><i class="fas fa-mobile-alt me-2" style="color:var(--orange)"></i>Payment Instructions</h5>
+          <div class="momo-provider"><div class="momo-logo momo-mtn">MTN</div><div><div class="momo-label">MTN Mobile Money</div><div class="momo-detail">Send to: <strong style="color:var(--text)">0759 970 315</strong> — Wadda John</div></div></div>
+          <div class="momo-provider"><div class="momo-logo momo-airtel">AIR</div><div><div class="momo-label">Airtel Money</div><div class="momo-detail">Send to: <strong style="color:var(--text)">0759 970 315</strong> — Wadda John</div></div></div>
+          <h5 style="font-family:var(--font-head);font-weight:700;color:var(--text);margin:1.2rem 0 .9rem">How It Works</h5>
+          <div class="momo-steps">
+            <div class="momo-step"><div class="momo-step-text"><strong>Get a Quotation</strong> — Fill in our Hire Me form or WhatsApp us.</div></div>
+            <div class="momo-step"><div class="momo-step-text"><strong>Accept the Quote</strong> — Confirm via WhatsApp or email.</div></div>
+            <div class="momo-step"><div class="momo-step-text"><strong>Send 50% Deposit</strong> — MTN MoMo or Airtel Money to <strong>0759 970 315</strong>.</div></div>
+            <div class="momo-step"><div class="momo-step-text"><strong>Submit Confirmation</strong> — Fill in the form and we start your project.</div></div>
+          </div>
+          <div class="pending-badge mt-3"><i class="fas fa-clock me-1"></i>Verified within 2 hours on business days</div>
+        </div>
+        <div class="d-flex gap-2 flex-wrap">
+          <a href="hire.html" class="btn-gold"><i class="fas fa-file-invoice me-1"></i>Get a Quotation First</a>
+          <a href="https://wa.me/256759970315?text=Hello%20Johnz%20Empire%2C%20I%27d%20like%20to%20discuss%20payment%20for%20a%20project." target="_blank" rel="noopener noreferrer" class="btn-wa"><i class="fab fa-whatsapp me-1"></i>WhatsApp Us</a>
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="momo-card">
+          <h5 style="font-family:var(--font-head);font-weight:700;color:var(--text);margin-bottom:.4rem">Submit Payment Confirmation</h5>
+          <p style="font-size:.82rem;color:var(--text-muted);margin-bottom:1.5rem">After sending your Mobile Money payment, fill in the details below. We will verify your transaction and contact you shortly.</p>
+          <form id="momoForm">
+            <div class="row">
+              <div class="col-md-6"><label class="fl" for="momoName">Full Name *</label><input type="text" class="fi2" id="momoName" name="name" placeholder="Your full name" required></div>
+              <div class="col-md-6"><label class="fl" for="momoPhone">Phone / WhatsApp *</label><input type="tel" class="fi2" id="momoPhone" name="phone" placeholder="e.g. 0759 970 315" required></div>
+            </div>
+            <label class="fl" for="momoService">Service Paying For</label>
+            <select class="fi2" id="momoService" name="service" style="cursor:pointer">
+              <option value="">Select service</option>
+              <option>Website Development</option><option>Mobile App Development</option>
+              <option>Business Management System</option><option>Graphic Design &amp; Branding</option>
+              <option>Digital Marketing</option><option>ICT Training</option>
+              <option>IT Support</option><option>Other</option>
+            </select>
+            <div class="row">
+              <div class="col-md-6"><label class="fl" for="momoAmount">Amount Paid (UGX) *</label><input type="number" class="fi2" id="momoAmount" name="amount_ugx" placeholder="e.g. 750000" required></div>
+              <div class="col-md-6"><label class="fl" for="momoTxn">Transaction / Reference ID *</label><input type="text" class="fi2" id="momoTxn" name="transaction_id" placeholder="e.g. 1234567890" required></div>
+            </div>
+            <div class="f-msg" id="momoMsg"></div>
+            <button type="submit" class="btn-gold w-100 justify-content-center" id="momoBtn"><i class="fas fa-paper-plane me-2"></i>Submit Payment Confirmation</button>
+            <p style="font-size:.74rem;color:var(--text-muted);margin-top:.8rem;text-align:center"><i class="fas fa-shield-alt me-1" style="color:var(--orange)"></i><strong>Note:</strong> Payment is <em>pending verification</em> until confirmed by Johnz Empire. We never claim automatic payment success.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ RECURRING REVENUE -->
+<section id="monthly-services" style="padding:6rem 0">
+  <div class="container">
+    <div class="row mb-5 text-center" data-aos="fade-up"><div class="col-12">
+      <div class="section-tag justify-content-center" style="display:flex">Monthly Packages</div>
+      <h2 class="s-heading">Ongoing Support for <span class="text-grad">Your Business</span></h2>
+      <p class="s-body mx-auto" style="max-width:540px">Affordable monthly packages to keep your business digital, visible, and running smoothly — no full-time IT department needed.</p>
+    </div></div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="50"><div class="recurring-card"><div class="r-icon"><i class="fas fa-globe"></i></div><h4 class="r-title">Website Maintenance</h4><div class="r-price">UGX 150K<span class="r-period">/month</span></div><p class="r-desc">Updates, backups, security monitoring and technical support for your website.</p><a href="https://wa.me/256759970315?text=Hello%20Johnz%20Empire%2C%20I%27m%20interested%20in%20the%20Monthly%20Website%20Maintenance%20package." target="_blank" rel="noopener noreferrer" class="btn-wa w-100 justify-content-center mt-2" onclick="trackJeEvent('recurring','maintenance')"><i class="fab fa-whatsapp me-1"></i>Request Package</a></div></div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100"><div class="recurring-card"><div class="r-icon"><i class="fas fa-tools"></i></div><h4 class="r-title">Business IT Support</h4><div class="r-price">UGX 200K<span class="r-period">/month</span></div><p class="r-desc">Monthly IT support — hardware, software, networking and system administration.</p><a href="https://wa.me/256759970315?text=Hello%20Johnz%20Empire%2C%20I%27m%20interested%20in%20the%20Monthly%20Business%20IT%20Support%20package." target="_blank" rel="noopener noreferrer" class="btn-wa w-100 justify-content-center mt-2" onclick="trackJeEvent('recurring','it_support')"><i class="fab fa-whatsapp me-1"></i>Request Package</a></div></div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="150"><div class="recurring-card"><div class="r-icon"><i class="fas fa-chart-line"></i></div><h4 class="r-title">SEO &amp; Digital Growth</h4><div class="r-price">UGX 300K<span class="r-period">/month</span></div><p class="r-desc">Monthly SEO optimisation, content strategy and digital visibility for Uganda businesses.</p><a href="https://wa.me/256759970315?text=Hello%20Johnz%20Empire%2C%20I%27m%20interested%20in%20the%20Monthly%20SEO%20%26%20Digital%20Growth%20package." target="_blank" rel="noopener noreferrer" class="btn-wa w-100 justify-content-center mt-2" onclick="trackJeEvent('recurring','seo')"><i class="fab fa-whatsapp me-1"></i>Request Package</a></div></div>
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200"><div class="recurring-card"><div class="r-icon"><i class="fas fa-pen-nib"></i></div><h4 class="r-title">Website Management</h4><div class="r-price">Custom<span class="r-period"> quote</span></div><p class="r-desc">Ongoing content updates, performance monitoring and full website management.</p><a href="https://wa.me/256759970315?text=Hello%20Johnz%20Empire%2C%20I%27m%20interested%20in%20Website%20Management.%20Please%20share%20a%20custom%20quote." target="_blank" rel="noopener noreferrer" class="btn-wa w-100 justify-content-center mt-2" onclick="trackJeEvent('recurring','management')"><i class="fab fa-whatsapp me-1"></i>Get Custom Quote</a></div></div>
+    </div>
+    <div class="trust-strip" data-aos="fade-up">
+      <div class="trust-badge"><i class="fas fa-shield-alt"></i>Trusted by 150+ Ugandan clients</div>
+      <div class="trust-badge"><i class="fas fa-map-marker-alt"></i>Based in Kampala, Uganda</div>
+      <div class="trust-badge"><i class="fas fa-phone"></i>0759 970 315 — Call anytime</div>
+      <div class="trust-badge"><i class="fab fa-whatsapp"></i>WhatsApp for instant support</div>
+      <div class="trust-badge"><i class="fas fa-star"></i>5+ years serving Uganda</div>
     </div>
   </div>
 </section>
@@ -1236,7 +1312,7 @@ footer{background:rgba(4,6,12,.97);padding:5rem 0 2rem;border-top:1px solid var(
       <div class="faq-item" data-aos="fade-up" data-aos-delay="50"><div class="faq-q"><span>How does your consulting process work?</span><i class="fas fa-chevron-down"></i></div><div class="faq-a"><p>We follow a 5-step process: (1) Consultation, (2) Planning, (3) Development, (4) Testing, and (5) Delivery with ongoing support and maintenance included.</p></div></div>
       <div class="faq-item" data-aos="fade-up" data-aos-delay="100"><div class="faq-q"><span>Do you provide training for individuals and organisations?</span><i class="fas fa-chevron-down"></i></div><div class="faq-a"><p>Yes! We train individuals, institutions, and corporate teams — covering ICT basics, web design, blogging, graphic design, online business mentorship, and more.</p></div></div>
       <div class="faq-item" data-aos="fade-up" data-aos-delay="150"><div class="faq-q"><span>What is your typical project timeline?</span><i class="fas fa-chevron-down"></i></div><div class="faq-a"><p>Simple websites take 2–3 weeks. Complex applications take 2–3 months. We provide detailed timelines in every proposal so you always know what to expect.</p></div></div>
-      <div class="faq-item" data-aos="fade-up" data-aos-delay="200"><div class="faq-q"><span>How can I get started with a project?</span><i class="fas fa-chevron-down"></i></div><div class="faq-a"><p>Use the contact form below, WhatsApp us at 0759 970 315, or email waddajohn45@gmail.com. We'll schedule a free consultation to discuss your needs and provide a custom proposal.</p></div></div>
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="200"><div class="faq-q"><span>How can I get started with a project?</span><i class="fas fa-chevron-down"></i></div><div class="faq-a"><p>Use the contact form below, WhatsApp us at 0759 970 315, or email contact@johnzempire.com. We'll schedule a free consultation to discuss your needs and provide a custom proposal.</p></div></div>
     </div>
   </div>
 </section>
@@ -1270,7 +1346,7 @@ footer{background:rgba(4,6,12,.97);padding:5rem 0 2rem;border-top:1px solid var(
         <div class="wa-block"><h5><i class="fab fa-whatsapp me-2"></i>Quick WhatsApp Chat</h5><p>Prefer instant messaging? Reach me directly on WhatsApp for quick replies.</p><a href="https://wa.me/256759970315" target="_blank" rel="noopener noreferrer" class="btn-std" style="background:#25D366;border-color:#25D366;color:#fff">Chat Now <i class="fas fa-arrow-right ms-1"></i></a></div>
         <div class="ci-card"><div class="ci-ico"><i class="fas fa-map-marker-alt"></i></div><div><div class="ci-lbl">Location</div><div class="ci-val">Kanyanya, Gayaza Road<br>Behind Gaz Petrol Station, Kampala</div></div></div>
         <div class="ci-card"><div class="ci-ico"><i class="fas fa-phone"></i></div><div><div class="ci-lbl">Phone</div><div class="ci-val"><a href="tel:0759970315" style="color:var(--text-sub)">0759 970 315</a></div></div></div>
-        <div class="ci-card"><div class="ci-ico"><i class="fas fa-envelope"></i></div><div><div class="ci-lbl">Email</div><div class="ci-val">https://formspree.io/f/mzdvwevp</div></div></div>
+        <div class="ci-card"><div class="ci-ico"><i class="fas fa-envelope"></i></div><div><div class="ci-lbl">Email</div><div class="ci-val">contact@johnzempire.com</div></div></div>
         <div class="mt-4">
           <h5 style="font-size:.9rem;font-weight:700;margin-bottom:.9rem;color:var(--text)">Find Me Online</h5>
           <div class="d-flex flex-wrap">
@@ -1351,7 +1427,7 @@ footer{background:rgba(4,6,12,.97);padding:5rem 0 2rem;border-top:1px solid var(
 </div>
 
 <!-- Structured Data -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Wadda John","jobTitle":"Software Developer & IT Consultant","url":"https://johnzempire.com/","telephone":"+256759970315","email":"waddajohn45@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Kampala","addressCountry":"UG"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Wadda John","jobTitle":"Software Developer & IT Consultant","url":"https://johnzempire.com/","telephone":"+256759970315","email":"contact@johnzempire.com","address":{"@type":"PostalAddress","addressLocality":"Kampala","addressCountry":"UG"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Johnz Empire","url":"https://johnzempire.com/","telephone":"+256759970315","address":{"@type":"PostalAddress","streetAddress":"Kanyanya, Gayaza Road","addressLocality":"Kampala","addressCountry":"UG"}}</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
@@ -1373,7 +1449,7 @@ footer{background:rgba(4,6,12,.97);padding:5rem 0 2rem;border-top:1px solid var(
   function resize(){c.width=innerWidth;c.height=innerHeight;}resize();addEventListener('resize',resize);
   class P{constructor(i){this.x=Math.random()*c.width;this.y=i?Math.random()*c.height:c.height+20;this.r=Math.random()*3+1.5;this.sp=Math.random()*1.2+.4;this.op=Math.random()*.4+.1;this.w=Math.random()*Math.PI*2;this.ws=Math.random()*.02+.005;}
   update(){this.y-=this.sp;this.w+=this.ws;this.x+=Math.sin(this.w)*.35;if(this.y<-10)Object.assign(this,new P(false));}
-  draw(){ctx.beginPath();ctx.arc(this.x,this.y,this.r,0,Math.PI*2);const d=document.documentElement.getAttribute('data-theme')!=='light';ctx.fillStyle=d?`rgba(255,138,0,${this.op})`:`rgba(11,61,145,${this.op*.6})`;ctx.fill();}}
+  draw(){ctx.beginPath();ctx.arc(this.x,this.y,this.r,0,Math.PI*2);const d=document.documentElement.getAttribute('data-theme')!=='light';ctx.fillStyle=d?`rgba(255,179,0,${this.op})`:`rgba(30,94,255,${this.op*.6})`;ctx.fill();}}
   const ps=[];for(let i=0;i<35;i++)ps.push(new P(true));
   function loop(){ctx.clearRect(0,0,c.width,c.height);if(vis)ps.forEach(p=>{p.update();p.draw();});requestAnimationFrame(loop);}loop();
   document.addEventListener('visibilitychange',()=>{vis=!document.hidden;});
@@ -1444,31 +1520,14 @@ document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.fa
 document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.lm-toggle').forEach(btn=>{btn.addEventListener('click',function(){const id=this.getAttribute('data-t'),el=document.getElementById(id);if(!el)return;el.classList.toggle('open');this.textContent=el.classList.contains('open')?'Show Less':'Learn More';});});});
 
 /* ── CONTACT FORM ── */
-document.addEventListener('DOMContentLoaded',()=>{
-  const form=document.getElementById('contactForm'),msg=document.getElementById('cMsg'),btn=document.getElementById('cBtn');if(!form)return;
-  form.addEventListener('submit',function(e){
-    e.preventDefault();
-    const name=form.querySelector('[name="name"]').value.trim();
-    const email=form.querySelector('[name="email"]').value.trim();
-    const sub=form.querySelector('[name="subject"]').value.trim();
-    const body2=form.querySelector('[name="message"]').value.trim();
-    if(!name||!email||!sub||!body2){msg.className='f-msg err';msg.textContent='Please fill in all fields.';msg.style.display='block';return;}
-    const mailBody=`Name: ${name}\nEmail: ${email}\n\nMessage:\n${body2}`;
-    const mailUrl=`mailto:https://formspree.io/f/mzdvwevp?subject=${encodeURIComponent(sub)}&body=${encodeURIComponent(mailBody)}`;
-    window.open(mailUrl,'_blank');
-    msg.className='f-msg ok';msg.textContent='Your email client has opened with the message ready — just click Send!';msg.style.display='block';
-    btn.innerHTML='<i class="fas fa-check me-2"></i>Email Opened!';btn.style.background='#16a34a';
-    setTimeout(()=>{btn.innerHTML='<i class="fas fa-paper-plane me-2"></i>Send Message';btn.style.background='';form.reset();msg.style.display='none';},5000);
-  });
-});
-
+/* Form handled by shared.js -> Formspree https://formspree.io/f/mzdvwevp */
 /* ── HIRE FORM ── */
 document.addEventListener('DOMContentLoaded',()=>{
   const form=document.getElementById('hireForm'),msg=document.getElementById('hMsg'),btn=document.getElementById('hBtn');if(!form)return;
   form.addEventListener('submit',async e=>{e.preventDefault();msg.className='f-msg';msg.style.display='none';btn.disabled=true;btn.textContent='Sending…';
   const fd=new FormData();fd.append('name',document.getElementById('hName').value);fd.append('email',document.getElementById('hEmail').value);fd.append('service',document.getElementById('hService').value);fd.append('budget',document.getElementById('hBudget').value);fd.append('details',document.getElementById('hDetails').value);
   const mailBody=`Name: ${document.getElementById('hName').value}\nEmail: ${document.getElementById('hEmail').value}\nService: ${document.getElementById('hService').value}\nBudget: ${document.getElementById('hBudget').value}\n\nDetails:\n${document.getElementById('hDetails').value}`;
-  const mailUrl=`mailto:https://formspree.io/f/mzdvwevp?subject=Hire%20Inquiry&body=${encodeURIComponent(mailBody)}`;
+  const mailUrl=`mailto:contact@johnzempire.com?subject=Hire%20Inquiry&body=${encodeURIComponent(mailBody)}`;
   window.open(mailUrl,'_blank');
   msg.className='f-msg ok';msg.textContent='Email opened! Click Send in your email client.';msg.style.display='block';form.reset();
   setTimeout(()=>{btn.disabled=false;btn.textContent='Send Inquiry';const m=bootstrap.Modal.getInstance(document.getElementById('hireModal'));if(m)m.hide();},3000);});
@@ -1481,7 +1540,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   let hist=[{role:'assistant',content:'Hello! I\'m your AI assistant for Johnz Empire. Ask me anything about services, pricing, or how we can help your business grow.'}];
   function addMsg(t,isUser){const d=document.createElement('div');d.className='ai-m '+(isUser?'ai-user':'ai-bot');const p=document.createElement('p');p.textContent=t;d.appendChild(p);chat.appendChild(d);chat.scrollTop=chat.scrollHeight;}
   function addTyping(){const d=document.createElement('div');d.className='ai-m ai-bot typing-dots';d.id='aiTyping';for(let i=0;i<3;i++){const s=document.createElement('span');d.appendChild(s);}chat.appendChild(d);chat.scrollTop=chat.scrollHeight;}
-  function fallback(m){const l=m.toLowerCase();if(l.includes('price')||l.includes('cost')||l.includes('how much'))return'ICT Training from UGX 50k/session, websites from UGX 500k, graphic design from UGX 30k. Contact us for a custom quote!';if(l.includes('service')||l.includes('offer'))return'We offer: ICT Training, Digital Marketing, Graphic Design, Blogging, IT Support, and Web & Mobile App Development.';if(l.includes('contact')||l.includes('phone')||l.includes('email'))return'Reach us at 0759 970 315 or waddajohn45@gmail.com. We\'re in Kanyanya, Gayaza Road, Kampala.';return'Great question! Share more details about your needs or reach us at 0759 970 315.';}
+  function fallback(m){const l=m.toLowerCase();if(l.includes('price')||l.includes('cost')||l.includes('how much'))return'ICT Training from UGX 50k/session, websites from UGX 500k, graphic design from UGX 30k. Contact us for a custom quote!';if(l.includes('service')||l.includes('offer'))return'We offer: ICT Training, Digital Marketing, Graphic Design, Blogging, IT Support, and Web & Mobile App Development.';if(l.includes('contact')||l.includes('phone')||l.includes('email'))return'Reach us at 0759 970 315 or contact@johnzempire.com. We\'re in Kanyanya, Gayaza Road, Kampala.';return'Great question! Share more details about your needs or reach us at 0759 970 315.';}
   async function getReply(m){hist.push({role:'user',content:m});if(KEY==='YOUR_ANTHROPIC_API_KEY_HERE')return fallback(m);
   try{const r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json','x-api-key':KEY,'anthropic-version':'2023-06-01'},body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:400,system:'You are a helpful AI assistant for Johnz Empire, a digital solutions company in Kampala, Uganda. Be concise and friendly.',messages:hist})});const d=await r.json();const rep=d.content[0].text;hist.push({role:'assistant',content:rep});return rep;}catch(e){return fallback(m);}}
   async function send(){const t=inp.value.trim();if(!t)return;addMsg(t,true);inp.value='';addTyping();const rep=await getReply(t);document.getElementById('aiTyping')?.remove();addMsg(rep,false);}
@@ -1506,6 +1565,72 @@ document.getElementById('soc-pop').addEventListener('click',function(e){if(e.tar
 (function(){if(!sessionStorage.getItem('je_pop')){setTimeout(()=>{document.getElementById('soc-pop').classList.add('show');},60000);}})();
 /* ── FOOTER YEAR ── */
 (function(){const e=document.getElementById('yr');if(e)e.textContent=new Date().getFullYear();})();
+</script>
+<script src="shared.js"></script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "name":"Johnz Empire",
+  "description":"Professional website design, software development, ICT training, graphic design and IT support in Kampala, Uganda.",
+  "url":"https://johnzempire.com",
+  "telephone":"+256759970315",
+  "email":"contact@johnzempire.com",
+  "image":"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLsM73BR6vQW_1YJt53OMXQ8sLjp7WcS1fDT0Hslq9jiuDZXGA1EjAtbF5WNmTrJrOFKHzsmMjVhyphenhyphenyNJyRuPKyfDTUuE4x87Ue44eytIPWUwhAsk3Ov8J6XD6h0KpzEZDjuOyfW4uCFY2SqaX9Z4he5oxTOmkL6hlF5Eg-ltPX_8_d8Cton3qNtpLv6_Y/s3264/20260110_004312%5B1%5D.jpg",
+  "founder":{"@type":"Person","name":"Wadda John"},
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Kanyanya, Gayaza Road, Behind Gaz Petrol Station",
+    "addressLocality":"Kampala",
+    "addressRegion":"Central Region",
+    "addressCountry":"UG"
+  },
+  "geo":{
+    "@type":"GeoCoordinates",
+    "latitude":"0.3476","longitude":"32.5825"
+  },
+  "areaServed":[
+    {"@type":"City","name":"Kampala"},
+    {"@type":"City","name":"Mukono"},
+    {"@type":"City","name":"Entebbe"},
+    {"@type":"City","name":"Jinja"},
+    {"@type":"Country","name":"Uganda"}
+  ],
+  "priceRange":"UGX 25,000 – UGX 10,000,000",
+  "openingHours":"Mo-Fr 08:00-18:00, Sa 09:00-16:00",
+  "sameAs":[
+    "https://www.youtube.com/@Johnzempire",
+    "https://www.tiktok.com/@johnzempire",
+    "https://github.com/tinacatina12"
+  ],
+  "hasOfferCatalog":{
+    "@type":"OfferCatalog",
+    "name":"Johnz Empire Services",
+    "itemListElement":[
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Website Development","description":"Professional responsive websites for businesses in Uganda"},"price":"500000","priceCurrency":"UGX"},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Mobile App Development","description":"Cross-platform mobile apps for Android and iOS"},"price":"800000","priceCurrency":"UGX"},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"ICT Training","description":"Practical ICT training for individuals and organizations in Uganda"},"price":"50000","priceCurrency":"UGX"},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Graphic Design","description":"Logo design, branding kits, flyers and social media graphics"},"price":"30000","priceCurrency":"UGX"},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"IT Support","description":"Computer, software, networking and technical support across Kampala"},"price":"25000","priceCurrency":"UGX"},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Digital Marketing","description":"SEO, social media management and digital marketing for Uganda businesses"},"price":"100000","priceCurrency":"UGX"}
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Wadda John",
+  "jobTitle":"Software Developer & IT Consultant",
+  "worksFor":{"@type":"Organization","name":"Johnz Empire"},
+  "url":"https://johnzempire.com",
+  "telephone":"+256759970315",
+  "email":"contact@johnzempire.com",
+  "address":{"@type":"PostalAddress","addressLocality":"Kampala","addressCountry":"UG"},
+  "knowsAbout":["Web Development","Mobile Apps","ICT Training","Graphic Design","Digital Marketing","IT Support","Software Development"]
+}
 </script>
 </body>
 </html>
