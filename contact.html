@@ -15,15 +15,15 @@
 .cfw{background:var(--bg-card);backdrop-filter:blur(18px);border:1px solid var(--border);border-radius:20px;padding:2.5rem}
 .fl{font-size:.82rem;font-weight:500;color:var(--text-sub);margin-bottom:.4rem;display:block}
 .ci-card{background:var(--bg-card);backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:14px;padding:1.4rem;margin-bottom:1rem;display:flex;align-items:flex-start;gap:1rem;transition:all .25s}
-.ci-card:hover{border-color:rgba(255,138,0,.3);transform:translateX(4px)}
-.ci-ico{width:44px;height:44px;background:linear-gradient(135deg,rgba(11,61,145,.3),rgba(255,138,0,.2));border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--orange);font-size:1rem;flex-shrink:0}
+.ci-card:hover{border-color:rgba(255,179,0,.3);transform:translateX(4px)}
+.ci-ico{width:44px;height:44px;background:linear-gradient(135deg,rgba(30,94,255,.3),rgba(255,179,0,.2));border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--orange);font-size:1rem;flex-shrink:0}
 .ci-lbl{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:.2rem}
 .ci-val{font-size:.9rem;color:var(--text-sub)}
 .wa-block{background:rgba(37,211,102,.08);border:1px solid rgba(37,211,102,.2);border-radius:14px;padding:1.4rem;margin-bottom:1rem}
 .wa-block h5{color:#25D366;margin-bottom:.5rem;font-size:1rem}
 .wa-block p{font-size:.83rem;color:var(--text-muted);margin-bottom:1rem}
 .faq-item{background:var(--bg-card);backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:12px;margin-bottom:12px;overflow:hidden;transition:border-color .3s}
-.faq-item.open{border-color:rgba(255,138,0,.3)}
+.faq-item.open{border-color:rgba(255,179,0,.3)}
 .faq-q{padding:1.4rem 1.6rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:.92rem;color:var(--text);gap:1rem;user-select:none}
 .faq-q i{color:var(--orange);transition:transform .3s}
 .faq-item.open .faq-q i{transform:rotate(180deg)}
@@ -35,7 +35,7 @@
 <body>
 <a href="#main" class="skip-link">Skip to main content</a>
 <div class="anim-bg"></div><canvas id="pcanvas" aria-hidden="true"></canvas>
-<div id="ck-bar"><div class="ck-text">We use cookies to enhance your experience. By continuing you agree to our <a href="#">Cookie Policy</a>.</div><div class="ck-btns"><button class="ck-btn ck-accept" onclick="setCookie('ok')">Accept All</button><button class="ck-btn ck-decline" onclick="setCookie('no')">Decline</button></div></div>
+<div id="ck-bar"><div class="ck-text">We use cookies to enhance your experience. By continuing you agree to our <a href="contact.html#privacy" style="color:var(--orange)">Cookie Policy</a>.</div><div class="ck-btns"><button class="ck-btn ck-accept" onclick="setCookie('ok')">Accept All</button><button class="ck-btn ck-decline" onclick="setCookie('no')">Decline</button></div></div>
 <div id="soc-pop" role="dialog" aria-modal="true"><div class="sp-card"><button class="sp-x" onclick="closePopup()" aria-label="Close"><i class="fas fa-times"></i></button><div class="sp-head"><div class="sp-title">Stay Connected</div><div class="sp-sub">Follow us for digital insights from Kampala.</div></div><div class="sp-btns"><a href="https://youtube.com/@johnzempire?si=VfGgbA-yuhZGEhm-" target="_blank" rel="noopener noreferrer" class="sp-btn sp-yt" onclick="closePopup()"><i class="fab fa-youtube"></i><div class="sp-bl"><span>Subscribe on YouTube</span><small>Join our community</small></div></a><a href="https://www.tiktok.com/@johnzempire" target="_blank" rel="noopener noreferrer" class="sp-btn sp-tt" onclick="closePopup()"><i class="fab fa-tiktok"></i><div class="sp-bl"><span>Follow on TikTok</span><small>Tech tips &amp; updates</small></div></a><a href="https://wa.me/256759970315" target="_blank" rel="noopener noreferrer" class="sp-btn sp-wa" onclick="closePopup()"><i class="fab fa-whatsapp"></i><div class="sp-bl"><span>WhatsApp</span><small>0759 970 315</small></div></a></div></div></div>
 <div class="float-btns"><a href="https://wa.me/256759970315" target="_blank" rel="noopener noreferrer" class="float-btn wa-float" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i><span class="float-lbl">Chat on WhatsApp</span></a><button class="float-btn ai-float" data-bs-toggle="modal" data-bs-target="#aiModal" aria-label="AI"><i class="fas fa-robot"></i><span class="float-lbl">AI Assistant</span></button></div>
 <button class="btt" id="bttBtn" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
@@ -74,12 +74,12 @@
         <div class="cfw">
           <h4 style="font-weight:700;margin-bottom:1.5rem;color:var(--text)">Send a Message</h4>
           <form id="contactForm">
-            <div class="row"><div class="col-md-6"><label class="fl">Your Name</label><input type="text" class="fi2" name="name" id="cName" placeholder="John Doe" required></div><div class="col-md-6"><label class="fl">Your Email</label><input type="email" class="fi2" name="email" id="cEmail" placeholder="john@example.com" required></div></div>
-            <label class="fl">Subject</label><input type="text" class="fi2" name="subject" id="cSubject" placeholder="Project enquiry" required>
-            <label class="fl">Message</label><textarea class="fi2" name="message" id="cMessage" rows="5" placeholder="Tell me about your project..." required></textarea>
+            <div class="row"><div class="col-md-6"><label class="fl" for="cName">Your Name *</label><input type="text" class="fi2" name="name" id="cName" placeholder="John Doe" required></div><div class="col-md-6"><label class="fl" for="cEmail">Your Email *</label><input type="email" class="fi2" name="email" id="cEmail" placeholder="john@example.com" required></div></div>
+            <label class="fl" for="cSubject">Subject *</label><input type="text" class="fi2" name="subject" id="cSubject" placeholder="Project enquiry" required>
+            <label class="fl" for="cMessage">Message *</label><textarea class="fi2" name="message" id="cMessage" rows="5" placeholder="Tell me about your project..." required></textarea>
             <div class="f-msg" id="cFormMsg"></div>
             <button type="submit" class="btn-gold" id="cSubmitBtn"><i class="fas fa-paper-plane me-2"></i>Send Message</button>
-            <p style="font-size:.75rem;color:var(--text-muted);margin-top:.8rem"><i class="fas fa-info-circle me-1" style="color:var(--orange)"></i>Clicking Send will open your email client with the message ready to send.</p>
+            <p style="font-size:.75rem;color:var(--text-muted);margin-top:.8rem"><i class="fas fa-shield-alt me-1" style="color:var(--orange)"></i>Sent securely via Formspree — or opens your email client as backup.</p>
           </form>
         </div>
       </div>
@@ -128,16 +128,8 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="shared.js"></script>
 <script>
+/* FAQ accordion */
 document.querySelectorAll('.faq-item').forEach(item=>{item.querySelector('.faq-q').addEventListener('click',()=>{const o=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));if(!o)item.classList.add('open');});});
-document.getElementById('contactForm').addEventListener('submit',function(e){
-  e.preventDefault();
-  const name=document.getElementById('cName').value.trim(),email=document.getElementById('cEmail').value.trim(),sub=document.getElementById('cSubject').value.trim(),msg=document.getElementById('cMessage').value.trim();
-  if(!name||!email||!sub||!msg){const m=document.getElementById('cFormMsg');m.className='f-msg f-err';m.textContent='Please fill in all fields.';return;}
-  const body=`Name: ${name}\nEmail: ${email}\n\nMessage:\n${msg}`;
-  window.open(`mailto:contact@johnzempire.com?subject=${encodeURIComponent(sub)}&body=${encodeURIComponent(body)}`,'_blank');
-  const m=document.getElementById('cFormMsg');m.className='f-msg f-ok';m.textContent='Your email client has opened — just click Send!';
-  const btn=document.getElementById('cSubmitBtn');btn.innerHTML='<i class="fas fa-check me-2"></i>Email Opened!';btn.style.background='#16a34a';
-  setTimeout(()=>{btn.innerHTML='<i class="fas fa-paper-plane me-2"></i>Send Message';btn.style.background='';this.reset();m.className='f-msg';},5000);
-});
+/* Contact form handled by shared.js → Formspree https://formspree.io/f/mzdvwevp */
 </script>
 </body></html>
