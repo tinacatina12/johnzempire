@@ -30,7 +30,7 @@
 .sk-f{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--navy),var(--orange));width:0;transition:width 2s var(--ease)}
 .edu-row{display:flex;align-items:center;gap:.85rem;padding:.7rem 0;border-bottom:1px solid var(--border);font-size:.9rem;color:var(--text-sub)}
 .edu-row:last-child{border:none}
-.edu-ico{width:36px;height:36px;border-radius:8px;background:rgba(255,138,0,.12);display:flex;align-items:center;justify-content:center;color:var(--orange);flex-shrink:0;font-size:.85rem}
+.edu-ico{width:36px;height:36px;border-radius:8px;background:rgba(255,179,0,.12);display:flex;align-items:center;justify-content:center;color:var(--orange);flex-shrink:0;font-size:.85rem}
 .tl{position:relative;max-width:900px;margin:0 auto}
 .tl::after{content:'';position:absolute;width:3px;background:linear-gradient(180deg,var(--navy),var(--orange));top:0;bottom:0;left:50%;margin-left:-1.5px;border-radius:2px}
 .tl-item{padding:.8rem 3rem;position:relative;width:50%}
@@ -38,13 +38,13 @@
 .tl-l{left:0}.tl-r{left:50%}
 .tl-l::after{right:-10px}.tl-r::after{left:-10px}
 .tl-box{background:var(--bg-card);backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:14px;padding:1.8rem;transition:all .3s var(--ease)}
-.tl-box:hover{transform:translateY(-4px);box-shadow:0 12px 35px var(--orange-glow);border-color:rgba(255,138,0,.25)}
+.tl-box:hover{transform:translateY(-4px);box-shadow:0 12px 35px var(--orange-glow);border-color:rgba(255,179,0,.25)}
 .tl-box h4{font-size:1rem;font-weight:700;color:var(--text);margin-bottom:.3rem}
 .tl-box h5{font-size:.85rem;font-weight:600;color:var(--orange);margin-bottom:.3rem}
 .tl-per{font-size:.75rem;color:var(--text-muted);margin-bottom:.6rem}
 .tl-desc{font-size:.83rem;color:var(--text-sub);line-height:1.7}
 .cert-card{background:var(--bg-card);backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:16px;padding:2.5rem 1.5rem;text-align:center;height:100%;transition:all .3s var(--ease)}
-.cert-card:hover{transform:translateY(-8px);box-shadow:0 18px 45px var(--orange-glow);border-color:rgba(255,138,0,.3)}
+.cert-card:hover{transform:translateY(-8px);box-shadow:0 18px 45px var(--orange-glow);border-color:rgba(255,179,0,.3)}
 .cert-ic{font-size:2.5rem;color:var(--orange);margin-bottom:1.2rem;display:block}
 .cert-t{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:.8rem}
 .cert-d{font-size:.85rem;color:var(--text-muted);line-height:1.75}
@@ -57,7 +57,7 @@
 <canvas id="pcanvas" aria-hidden="true"></canvas>
 
 <div id="ck-bar">
-  <div class="ck-text">We use cookies to enhance your experience. By continuing you agree to our <a href="#">Cookie Policy</a>.</div>
+  <div class="ck-text">We use cookies to enhance your experience. By continuing you agree to our <a href="contact.html#privacy" style="color:var(--orange)">Cookie Policy</a>.</div>
   <div class="ck-btns">
     <button class="ck-btn ck-accept" onclick="setCookie('ok')">Accept All</button>
     <button class="ck-btn ck-decline" onclick="setCookie('no')">Decline</button>
@@ -284,23 +284,23 @@
       </div>
       <div class="modal-body" style="padding:1.6rem">
         <form id="hireForm">
-          <label class="fl">Your Name</label><input type="text" class="fi2" id="hName" required>
-          <label class="fl">Your Email</label><input type="email" class="fi2" id="hEmail" required>
+          <label class="fl">Your Name</label><input type="text" class="fi2" name="name" id="hName" required>
+          <label class="fl">Your Email</label><input type="email" class="fi2" name="email" id="hEmail" required>
           <label class="fl">Service Needed</label>
-          <select class="fi2" id="hService" required style="cursor:pointer">
+          <select class="fi2" name="service" id="hService" required style="cursor:pointer">
             <option value="">Select a service</option>
             <option>Web Development</option><option>Mobile App Development</option>
             <option>Graphic Design</option><option>ICT Training</option>
             <option>Computer / Phone Repair</option><option>IT Consulting</option>
           </select>
           <label class="fl">Budget Range</label>
-          <select class="fi2" id="hBudget" required style="cursor:pointer">
+          <select class="fi2" name="budget" id="hBudget" required style="cursor:pointer">
             <option value="">Select budget</option>
             <option>Under $500</option><option>$500 – $1,000</option>
             <option>$1,000 – $5,000</option><option>Over $5,000</option>
           </select>
           <label class="fl">Project Details</label>
-          <textarea class="fi2" id="hDetails" rows="4" required></textarea>
+          <textarea class="fi2" name="details" id="hDetails" rows="4" required></textarea>
           <button type="submit" class="btn-gold w-100 justify-content-center" id="hireSendBtn">
             <i class="fas fa-paper-plane me-2"></i>Send Inquiry</button>
         </form>
